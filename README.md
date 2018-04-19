@@ -8,9 +8,6 @@ Here are two examples of Blossom robots:
 <img width="200px" src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" />
 
 
-Python-based control library for Blossom or Dynamixel-controlled robots.
-Written for computer-tethering and streamlining the pipeline from software tasks to robot control.
-
 ## Building Blossom
 
 To build your own Blossom, check out the [build-Wiki](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
