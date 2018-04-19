@@ -94,7 +94,9 @@ Available commands:
 The GUI _should_ be accessible via `localhost:8000` after starting up the CLI if `-b` was **not** specified. Otherwise, the CLI should print a message stating the server url.
 
 ### Mobile app
-**Currently only supported for Android** The app can be installed via the Expo Client app. From within the app, search for `https://exp.host/@psychomugs/blossom-app`.
+**Currently only supported for Android**
+
+The app can be installed via the Expo Client app. From within the app, search for `https://exp.host/@psychomugs/blossom-app`.
 
 _If Blossom is not controllable at first, unfocus and refocus the app._
 
