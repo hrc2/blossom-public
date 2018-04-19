@@ -1,0 +1,47 @@
+{
+  "animation": "t2", 
+  "frame_list": [
+    {
+      "positions": [
+        {
+          "dof": "tower_1", 
+          "pos": 4.047
+        }, 
+        {
+          "dof": "tower_2", 
+          "pos": 5.0146
+        }, 
+        {
+          "dof": "tower_3", 
+          "pos": 5.0088
+        }, 
+        {
+          "dof": "base", 
+          "pos": 2.78
+        }
+      ], 
+      "millis": 1000.0
+    }, 
+    {
+      "positions": [
+        {
+          "dof": "tower_1", 
+          "pos": 4.8094
+        }, 
+        {
+          "dof": "tower_2", 
+          "pos": 5.0146
+        }, 
+        {
+          "dof": "tower_3", 
+          "pos": 5.003
+        }, 
+        {
+          "dof": "base", 
+          "pos": 2.7918
+        }
+      ], 
+      "millis": 2000.0
+    }
+  ]
+}

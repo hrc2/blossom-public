@@ -1,0 +1,90 @@
+{
+  "videoId": "hbvvEF8vUIA", 
+  "triggers": [
+    {
+      "emotion": "happy", 
+      "gesture": "grand0", 
+      "time": 50.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand1", 
+      "time": 5058.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand2", 
+      "time": 10081.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand3", 
+      "time": 15007.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand4", 
+      "time": 20066.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand5", 
+      "time": 25097.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand6", 
+      "time": 30031.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand7", 
+      "time": 35074.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand8", 
+      "time": 40095.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand9", 
+      "time": 45055.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand10", 
+      "time": 50089.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand11", 
+      "time": 55033.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand12", 
+      "time": 60072.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand13", 
+      "time": 65036.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand14", 
+      "time": 70094.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand15", 
+      "time": 75035.0
+    }, 
+    {
+      "emotion": "happy", 
+      "gesture": "grand16/calm", 
+      "time": 80086.0
+    }
+  ]
+}

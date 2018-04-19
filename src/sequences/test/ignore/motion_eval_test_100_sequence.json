@@ -1,0 +1,63 @@
+{
+"animation": "motion_eval_test_100",
+"frame_list": [
+{
+"millis": 0,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "3.00"
+},
+{
+"dof": "tower_2",
+"pos": "3.00"
+},
+{
+"dof": "tower_3",
+"pos": "3.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+}
+]
+}

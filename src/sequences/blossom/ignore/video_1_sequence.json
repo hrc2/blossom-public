@@ -1,0 +1,469 @@
+{
+"animation": "video_1",
+"frame_list": [
+{
+"millis": 0,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "6.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "6.00"
+},
+{
+"dof": "tower_2",
+"pos": "6.00"
+},
+{
+"dof": "tower_3",
+"pos": "6.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "6.00"
+},
+{
+"dof": "tower_3",
+"pos": "6.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "3.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "3.00"
+},
+{
+"dof": "tower_2",
+"pos": "3.00"
+},
+{
+"dof": "tower_3",
+"pos": "3.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "2.00"
+},
+{
+"dof": "tower_2",
+"pos": "3.00"
+},
+{
+"dof": "tower_3",
+"pos": "3.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "2.00"
+},
+{
+"dof": "tower_2",
+"pos": "2.00"
+},
+{
+"dof": "tower_3",
+"pos": "2.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 5000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "3.00"
+},
+{
+"dof": "tower_2",
+"pos": "2.00"
+},
+{
+"dof": "tower_3",
+"pos": "2.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 5500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "3.00"
+},
+{
+"dof": "tower_2",
+"pos": "3.00"
+},
+{
+"dof": "tower_3",
+"pos": "3.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 6000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.00"
+},
+{
+"dof": "tower_2",
+"pos": "3.00"
+},
+{
+"dof": "tower_3",
+"pos": "3.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 6500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 7000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 7500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+}
+]
+}

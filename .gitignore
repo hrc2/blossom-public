@@ -1,0 +1,25 @@
+__pycache__
+src/sequences/*/*
+*.pyc
+.DS_Store
+node_modules
+*.pkl
+.ipynb_checkpoints
+bundle.js
+
+# virtual environment
+venv
+stop
+
+# keep default sequences
+!src/sequences/*/ignore
+!src/sequences/*/anger_sequence.json
+!src/sequences/*/fear_sequence.json
+!src/sequences/*/happy_sequence.json
+!src/sequences/*/sad_sequence.json
+!src/sequences/*/reset_sequence.json
+!src/sequences/*/yes_sequence.json
+!src/sequences/*/no_sequence.json
+!src/sequences/*/grand*
+!src/sequences/*/inside*
+!src/sequences/*/sesame*

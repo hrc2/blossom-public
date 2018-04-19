@@ -1,0 +1,9546 @@
+{
+"animation": "circle_smooth",
+"frame_list": [
+{
+"millis": 0,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 13,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.25"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 25,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.50"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 38,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.75"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 50,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 63,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 75,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 88,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 113,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 125,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 138,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 150,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 163,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.97"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 175,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.96"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 188,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 200,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 213,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.94"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 225,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.93"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 238,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.91"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 250,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.90"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 263,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.89"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 275,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.88"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 288,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.87"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 300,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.85"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 313,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.84"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 325,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.82"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 338,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.81"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 350,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.79"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 363,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.78"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 375,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.76"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 388,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.74"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 400,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.73"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 413,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.71"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 425,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.69"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 438,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.67"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 450,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.65"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 463,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.64"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 475,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.62"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 488,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.60"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.58"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 513,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.56"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 525,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.54"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 538,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.52"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 550,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.50"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 563,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.48"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 575,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.46"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 588,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.44"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 600,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.42"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 613,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.40"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 625,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.38"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 638,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.36"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 650,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.35"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 663,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.33"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 675,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.31"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 688,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.29"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 700,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.27"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 713,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.26"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 725,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.24"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 738,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.22"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 750,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.21"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 763,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.19"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 775,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.18"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 788,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.16"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 800,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.15"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 813,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.13"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 825,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.12"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 838,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.11"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 850,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.10"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 863,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.09"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 875,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.07"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 888,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.06"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 900,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 913,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 925,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.04"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 938,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.03"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 950,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 963,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 975,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 988,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1013,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1025,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1038,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1050,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1063,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1075,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1088,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1113,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1125,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1138,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1150,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1163,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.03"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1175,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.04"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1188,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1200,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1213,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.06"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1225,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.07"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1238,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.09"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1250,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.10"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1263,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.11"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1275,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.12"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1288,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.13"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1300,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.15"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1313,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.16"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1325,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.18"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1338,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.19"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1350,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.21"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1363,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.22"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1375,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.24"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1388,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.26"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1400,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.27"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1413,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.29"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1425,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.31"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1438,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.33"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1450,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.35"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1463,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.36"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1475,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.38"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1488,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.40"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.42"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1513,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.44"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1525,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.46"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1538,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.48"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1550,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.50"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1563,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.52"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1575,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.54"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1588,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.56"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1600,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.58"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1613,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.60"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1625,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.62"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1638,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.64"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1650,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.65"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1663,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.67"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1675,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.69"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1688,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.71"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1700,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.73"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1713,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.74"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1725,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.76"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1738,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.78"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1750,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.79"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1763,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.81"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1775,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.82"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1788,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.84"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1800,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.85"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1813,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.87"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1825,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.88"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1838,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.89"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1850,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.90"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1863,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.91"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1875,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.93"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1888,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.94"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1900,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1913,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1925,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.96"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1938,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.97"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1950,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1963,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1975,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 1988,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2013,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2025,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2038,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2050,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2063,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2075,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2088,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2113,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2125,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2138,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2150,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2163,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2175,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2188,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2200,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2213,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.97"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2225,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.96"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2238,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2250,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2263,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.94"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2275,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.93"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2288,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.91"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2300,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.90"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2313,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.89"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2325,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.88"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2338,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.87"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2350,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.85"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2363,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.84"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2375,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.82"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2388,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.81"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2400,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.79"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2413,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.78"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2425,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.76"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2438,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.74"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2450,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.73"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2463,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.71"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2475,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.69"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2488,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.67"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.65"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2513,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.64"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2525,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.62"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2538,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.60"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2550,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.58"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2563,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.56"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2575,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.54"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2588,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.52"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2600,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.50"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2613,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.48"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2625,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.46"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2638,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.44"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2650,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.42"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2663,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.40"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2675,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.38"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2688,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.36"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2700,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.35"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2713,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.33"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2725,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.31"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2738,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.29"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2750,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.27"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2763,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.26"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2775,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.24"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2788,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.22"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2800,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.21"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2813,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.19"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2825,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.18"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2838,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.16"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2850,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.15"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2863,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.13"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2875,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.12"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2888,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.11"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2900,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.10"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2913,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.09"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2925,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.07"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2938,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.06"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2950,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2963,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2975,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.04"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 2988,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.03"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3013,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3025,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3038,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3050,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3063,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3075,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3088,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3113,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3125,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3138,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3150,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3163,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.01"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3175,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3188,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3200,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.02"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3213,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.03"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3225,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.04"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3238,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3250,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.05"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3263,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.06"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3275,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.07"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3288,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.09"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3300,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.10"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3313,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.11"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3325,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.12"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3338,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.13"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3350,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.15"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3363,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.16"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3375,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.18"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3388,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.19"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3400,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "4.90"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.21"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3413,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.22"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3425,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "4.91"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.24"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3438,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.26"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3450,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.27"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3463,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "4.92"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.29"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3475,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "4.93"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.31"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3488,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.33"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3500,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.94"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.35"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3513,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "4.95"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.36"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3525,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.38"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3538,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "4.96"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.40"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3550,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.97"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.42"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3563,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.44"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3575,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.98"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.46"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3588,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "4.99"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.48"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3600,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.50"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3613,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.52"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3625,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.54"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3638,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.56"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3650,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.10"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "4.90"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.58"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3663,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.60"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3675,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.09"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "4.91"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.62"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3688,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.64"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3700,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.65"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3713,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.08"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "4.92"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.67"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3725,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.07"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "4.93"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.69"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3738,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.71"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3750,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.06"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.94"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.73"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3763,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.05"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "4.95"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.74"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3775,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.76"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3788,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.04"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "4.96"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.78"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3800,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.03"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.97"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.79"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3813,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.81"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3825,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.02"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.98"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.82"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3838,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.01"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "4.99"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.84"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3850,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "5.00"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.00"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.85"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3863,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.99"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.01"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.87"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3875,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.88"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3888,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.98"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.02"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.89"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3900,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.97"
+},
+{
+"dof": "tower_2",
+"pos": "5.10"
+},
+{
+"dof": "tower_3",
+"pos": "5.03"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.90"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3913,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.91"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3925,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.96"
+},
+{
+"dof": "tower_2",
+"pos": "5.09"
+},
+{
+"dof": "tower_3",
+"pos": "5.04"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.93"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3938,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.95"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.05"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.94"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3950,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3963,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.94"
+},
+{
+"dof": "tower_2",
+"pos": "5.08"
+},
+{
+"dof": "tower_3",
+"pos": "5.06"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.95"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3975,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.93"
+},
+{
+"dof": "tower_2",
+"pos": "5.07"
+},
+{
+"dof": "tower_3",
+"pos": "5.07"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.96"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 3988,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.97"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4000,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.06"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4013,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.92"
+},
+{
+"dof": "tower_2",
+"pos": "5.05"
+},
+{
+"dof": "tower_3",
+"pos": "5.08"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4025,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.98"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4038,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.91"
+},
+{
+"dof": "tower_2",
+"pos": "5.04"
+},
+{
+"dof": "tower_3",
+"pos": "5.09"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4050,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.03"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "4.99"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4063,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4075,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.02"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4088,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.01"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+},
+{
+"millis": 4100,
+"positions": [
+{
+"dof": "tower_1",
+"pos": "4.90"
+},
+{
+"dof": "tower_2",
+"pos": "5.00"
+},
+{
+"dof": "tower_3",
+"pos": "5.10"
+},
+{
+"dof": "base",
+"pos": "3.00"
+},
+{
+"dof": "arms",
+"pos": "5.00"
+},
+{
+"dof": "ears",
+"pos": "1.00"
+}
+]
+}
+]
+}

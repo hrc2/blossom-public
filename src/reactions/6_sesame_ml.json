@@ -1,0 +1,60 @@
+{
+    "triggers": [
+        {
+            "emotion": "happy",
+            "gesture": "reset/random",
+            "time": 1.0
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 300.3
+        },
+        {
+            "emotion": "sad",
+            "gesture": "sad/random",
+            "time": 6940.266666666666
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 20653.966666666667
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 27961.266666666666
+        },
+        {
+            "emotion": "fear",
+            "gesture": "fear/random",
+            "time": 33700.333333333336
+        },
+        {
+            "emotion": "fear",
+            "gesture": "fear/random",
+            "time": 39739.7
+        },
+        {
+            "emotion": "fear",
+            "gesture": "fear/random",
+            "time": 46246.200000000004
+        },
+        {
+            "emotion": "fear",
+            "gesture": "fear/random",
+            "time": 51518.13333333333
+        },
+        {
+            "emotion": "fear",
+            "gesture": "fear/random",
+            "time": 56856.8
+        },
+        {
+            "emotion": "sad",
+            "gesture": "sad/random",
+            "time": 62095.36666666667
+        }
+    ],
+    "videoId": "6gYivM_Ur4A"
+}

@@ -1,0 +1,18 @@
+{
+    "animation": "zero",
+    "frame_list": [
+        {
+            "millis": 0,
+            "positions": [
+                {
+                    "dof": "base",
+                    "pos": "0.00"
+                },
+                {
+                    "dof": "dome",
+                    "pos": "0.00"
+                }
+            ]
+        }
+    ]
+}

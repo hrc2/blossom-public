@@ -1,0 +1,55 @@
+{
+    "triggers": [
+        {
+            "emotion": "happy",
+            "gesture": "reset/random",
+            "time": 1.0
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 375.375
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 20562.208333333332
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 34951.58333333333
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 44627.916666666664
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 51092.70833333333
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 55722.33333333333
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 63146.416666666664
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 70320.25
+        },
+        {
+            "emotion": "happy",
+            "gesture": "happy/random",
+            "time": 77619.20833333333
+        }
+    ],
+    "videoId": "7zP8dfZ-QuI"
+}

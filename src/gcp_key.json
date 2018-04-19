@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "blossom-gestures",
+  "private_key_id": "eba3df9b3140bcb4c4ca4869c11021e826e21d12",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCef5TAwY6JnER\n+icBGFJyhAOIqCHL963GJYANcNDyfzFPQXaOAz+4REI5HsZeJYZjItAsowa1dIk7\nAymsx015kdlVrCvG6bz6DKYABWc9rhwRuXIgQsGm2YUE3FalANMUz7W6LfNnob+4\nBUf4o+18MLOxTI1mwnNH8v+FHOcXVVbsjKUtVvxeZqvqsbGvr4/tBvstYMqHsDog\nvjtgM+ukILGC/T2rlZqwymYLIvGx45dBKVtAqjtScqWTa56FJ8x+/7KharBcee7S\nAtb7HwvFFuO8brUDhXKeeMSKZ7JWUpiqPeSJP3Z25tPYh/IZ2s8ntsC/LFCa07c2\n1JIf4nOlAgMBAAECggEACrHi81rkzluxAf7VLcl8tpOoI8KxRx0EvLNGaUF6xYHg\nAD6L9UUxosx4LYQnKblxEZscwn5S/wrHWuGH5W/5b1XUE1LPqSr6APCjTA2ABGOX\n42lPdig4VkNl6LhFozcvedhuuJbQfl1mDx8/5RPTb9i4Img2FNWyjsf1gYhvH03c\nz85uhNHhrdgD/UGmxald7FLRogvtBv0VrmMJo2zH4mQG9j8UsUOk8wM7V0iluxwx\ntd3yW6+KYPxi3gJdvG696Ab8H4HgCLEdNwzyRy/s1BURt/laxgPhRiYQZBtMYfvI\np/1xnfhF55IAom5yILsqmo4ha+xuPOmazNomWjUqSQKBgQDsde7r39LUzVoh9BEz\n14eAO1lvur5N/dVBtOVSVO7+v3vD/5P2bnVcNmJ6ZieQc4f12hU/dif3QrN4JfC0\nBnZyL5YaJuTzlyNLiRr9lpPcH59PsCclc24V12Ok+8Osl+dBFpRSFDOrsNCeSCLM\n1Avg1Tyup2XNBFHW4VrJ+uIV3QKBgQDSi+6A/8fGlQHHHn6htFLT190CD4NpShRp\nAzu92qwd39CFe0NsYAT7lfh+7NkSMSVJf310XNbGmhhwEVG2cyDSrpPUkiz7VozD\niGU/ft6oYUd1GWi4a6vZVutFiNmgqL/DiR58l4P5DKmGHIhcVqCpDTkh9VwcUhYk\ntC/IdmOsaQKBgFCqRrA2scCgsS/GCBxMWVA4buE7rnICtr5sjJKSoNlMz1bkmEBI\nHEcx0lR5BuQzVV1cYUU99JJYMcs5/iwbzEpVy3nubMpgc8zv38JEnPpJ21oe+KvA\n/fv7d2Wv8Weuhlhg8IYzmBDpB7IHX7/KUqcHd2UJfCP9ZkHMrOEccgYNAoGBAMQC\naaPGe+Gvztvk09cO3R1DFQlaD+jxglbRH8j7zshxGNtribVXHsxpLdJcBSoefqwR\n+GVgGMMDqkSKmxvTynbY998pxp6mUJ2oWTnnjroK9k9ZvFgURQQtGxK8+H3NG9mZ\nybwMAlzVIO0tmvT74M4A9XNbzMjA0sSQyvtA3EIhAoGBAK5QZeUwC5ZH5Pk4IPnj\nvY3DxDmfSo+ktGGBrprHwQqPORsCM609LQUOI+Z12HjvzrRCJ92IyJnbcDjjjA8B\nTrpqBs+a8EjFq1XWUc2WD7GY+fklcp+ryltlGTx8eBId33G/64PMAqfNodoMYjej\n1BUVvotPTsrz/iY1KHwVBOsA\n-----END PRIVATE KEY-----\n",
+  "client_email": "gestures@blossom-gestures.iam.gserviceaccount.com",
+  "client_id": "100978069712001637503",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gestures%40blossom-gestures.iam.gserviceaccount.com"
+}
