@@ -1,6 +1,19 @@
 # Blossom
+
+Blossom is an open-hardware, open-source tensile robot that you can handcraft and accessorize to your liking. You can read more about the project in [Evan Ackerman's IEEE Spectrum article](https://spectrum.ieee.org/automaton/robotics/home-robots/blossom-a-creative-handmade-approach-to-social-robotics-from-cornell-and-google).
+
+Here are two examples of Blossom robots:
+
+<img width="200px" src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-bunny-corner-e1502812175733-300x189.jpg" />
+<img width="200px" src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" />
+
+
 Python-based control library for Blossom or Dynamixel-controlled robots.
 Written for computer-tethering and streamlining the pipeline from software tasks to robot control.
+
+## Building Blossom
+
+To build your own Blossom, check out the [build-Wiki](/wiki). The rest of this document will teach you how to set up the software to run the robot.
 
 ## Get repo
 In a terminal, clone this repo
