@@ -20,7 +20,8 @@ h_rest = 82.5       # from loop
 # angle between tower and attachment point
 alp = np.arctan2(r,h_rest)
 # radius of wheel
-r_w = 11.0
+# undersize to exaggerate more, oversize to reduce sensitivity
+r_w = 9.0
 # position of front attachment point wrt intertial frame
 p1_0 = np.array([r,0,0])
 # define rotation matrices to other attachment points

@@ -210,8 +210,8 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
 
             # get time delay until next frame
             cur_time = (time.time()-start_time)*1000.0
-            # factor for the speed
-            t_delay_millis = (f.millis/self.speed - cur_time)
+            # factor for the speed, make sure not 0
+            t_delay_millis = (f.millis/max(self.speed,0.1) - cur_time)
             # skip if behind
             if (t_delay_millis<0):
                 continue

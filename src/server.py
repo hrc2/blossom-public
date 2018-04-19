@@ -49,6 +49,7 @@ class Server(object):
 
 app = Flask(__name__)
 server = Server()
+cur_yaw = 0
 
 # paths relative to start.py, should make relative to this file in the future
 SEQUENCES_DIR = "./src/sequences/"
@@ -146,6 +147,7 @@ def get_imu_data(raw_data):
     """
     return the current imu values of the robot
     """
+    global cur_yaw
     imu = [0] * len(raw_data)
     # find start/end of each number (delimit by : ,)
     i_start = [i for i, c in enumerate(raw_data) if c == ':']
@@ -157,15 +159,16 @@ def get_imu_data(raw_data):
     for i, (i_s, i_e) in enumerate(zip(i_start, i_end)):
         imu[i] = float(raw_data[i_s + 1:i_e])
 
+    cur_yaw = imu[2]
     return imu
 
 
 @app.route('/sequences')
 def get_sequences():
-    """
-    return the list of available sequence names
-    """
-    seqs = server.master_robot.get_sequences()
+    #comment below is what code used to be before time was implemented n
+    #seqs = server.master_robot.get_sequences()
+    seqs = server.master_robot.get_time_sequences()
+    
     return jsonify(seqs)
 
 
@@ -270,9 +273,7 @@ def reset_sensors():
     server.master_robot.reset_position()
 
     # get current yaw reading and store it
-    raw_data = request.data
-    e = get_imu_data(raw_data)
-    server.yaw = e[2]
+    server.yaw = cur_yaw
     return "200 OK"
 
 
