@@ -93,10 +93,21 @@ Available commands:
 ### GUI
 The GUI _should_ be accessible via `localhost:8000` after starting up the CLI if `-b` was **not** specified. Otherwise, the CLI should print a message stating the server url.
 
-### Mobile app
-**Currently only supported for Android**
+### Mobile app (Currently only supported for Android)
 
-The app can be installed via the Expo Client app. From within the app, search for `https://exp.host/@psychomugs/blossom-app`.
+**Installation**
+
+The app can be installed on [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) via the Expo Client app. Then, find the last stable release by searching for `https://exp.host/@psychomugs/blossom-app`.
+
+**Controlling the robot**
+
+In the app, tap the `Settings` icon in the top right.
+
+Enter the IP address of the host computer; this is listed under "Starting server on *IP_address*:8000" when first starting `start.py` or can be found other ways.
+
+Once the IP address is entered, go back to the controller and toggle on `Control Robot`.
+
+This allows you to control the robot's orientation (pitch, yaw, roll) by moving the phone and use sliders for the height.
 
 _If Blossom is not controllable at first, unfocus and refocus the app._
 
