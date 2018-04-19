@@ -94,8 +94,7 @@ Available commands:
 The GUI _should_ be accessible via `localhost:8000` after starting up the CLI if `-b` was **not** specified. Otherwise, the CLI should print a message stating the server url.
 
 ### Mobile app
-The app can be installed on iOS or Android via the Expo Client app (available in the respective app stores). From within the app, search for `https://exp.host/@michaelhu/blossom-app`.
+**Currently only supported for Android** The app can be installed via the Expo Client app. From within the app, search for `https://exp.host/@psychomugs/blossom-app`.
 
-_Android: if Blossom is not controllable at first, unfocus and refocus the app._
+_If Blossom is not controllable at first, unfocus and refocus the app._
 
-_iOS: [Expo now no longer supports QR scanning or URL entry](https://blog.expo.io/upcoming-limitations-to-ios-expo-client-8076d01aee1a), so you must have an Expo account to publish and "test" the app; instructions are in [BlossomApp](https://github.com/hrc2/blossom/tree/master/BlossomApp)._
