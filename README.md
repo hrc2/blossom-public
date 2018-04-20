@@ -10,7 +10,7 @@ Here are two examples of Blossom robots:
 
 ## Building Blossom
 
-To build your own Blossom, check out the [build-Wiki](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
+To build your own Blossom, check out the [Build Guide](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
 
 ## Get repo
 In a terminal, clone this repo
