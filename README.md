@@ -83,11 +83,14 @@ Additional flags:
 ```
 _Linux may default to a loopback IP (`127.0.1.1`); in this case you **must** specify the IP address using `-i`._
 
+To make Woody nod, type: 
+
+`s` -> Enter -> `yes`
+
 Available commands:
 - `l`: list available sequences
-- `s`: perform a sequence, followed by sequence name
-  - e.g. `s` -> Enter -> `yes`
-  - To perform an idler (looped gesture), enter two sequence names separated by `=`, e.g. `s` -> Enter -> `yes=no` (play `yes` then loop `no` indefinitely until another sequence is played).  
+- `s`: perform a sequence, followed by the Enter key and the sequence name
+- To perform an idler (looped gesture), enter two sequence names separated by `=`, e.g. `s` -> Enter -> `yes=no` (play `yes` then loop `no` indefinitely until another sequence is played).  
 - `q`: quit
 
 ### GUI
