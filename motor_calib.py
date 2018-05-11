@@ -23,4 +23,9 @@ raw_input("Motor position: 0; Calibrate string length then press 'Enter'. ")
 # set motor back to 100
 motors.set_goal_position({motor_id:100})
 print("Motor position: 100; Calibration complete!")
+
+# change ID
+new_id = int(raw_input("Enter motor ID (1-3 for towers, 4 for base, 5+ for etc): "))
+motors.change_id({motor_id:new_id})
+
 quit()
