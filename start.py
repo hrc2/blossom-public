@@ -97,6 +97,21 @@ class SequenceRobot(robot.Robot):
                     if (s[-5:] == '.json'):
                         self.load_sequence(subseq_dir + '/' + s)
 
+
+    def assign_time_length(self, keys, vals):
+        timeMap = [None] * len(keys)
+        for i in range(0, len(keys)):
+            frameLst = vals[i].frames
+            timeAmnt = frameLst[len(vals[i].frames) - 1].millis
+            timeMap[i] = [keys[i], str(timeAmnt / 1000)]
+        return timeMap
+
+    def get_time_sequences(self):
+        tempKeys = self.seq_list.keys()
+        tempVals = self.seq_list.values()
+        tempMap = self.assign_time_length(tempKeys, tempVals)
+        return tempMap
+        
     def get_sequences(self):
         """
         Get all sequences loaded on robot
