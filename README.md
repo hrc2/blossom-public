@@ -4,9 +4,10 @@ Blossom is an open-hardware, open-source tensile robot that you can handcraft an
 
 Here are two examples of Blossom robots:
 
-<img width="200px" src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-bunny-corner-e1502812175733-300x189.jpg" />
-<img width="200px" src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" />
+<img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-bunny-corner-e1502812175733-300x189.jpg" width="300">
+<img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" width="300" >
 
+**For any questions (assembly or software related), [please check/make public issues](https://github.com/hrc2/blossom-public/issues).**
 
 ## Building Blossom
 
