@@ -10,12 +10,13 @@ import json
 import numpy as np
 from collections import OrderedDict
 import socket
-
+import requests
 
 class Server(object):
     """
     A "singleton" object for housing server state. Includes methods for updating server functions from outside sources.
     """
+
     def __init__(self):
         self.master_robot = None
         self.robots = []
@@ -23,6 +24,11 @@ class Server(object):
         self.record = lambda: None
         self.stop_record = lambda: None
         self.store_gesture = lambda: None
+
+        # playback params
+        self.speed = 1.0
+        self.amp = 1.0
+        self.post = 1.0
 
         # init yaw (for resetting w/ phone controller)
         self.yaw = 0
@@ -78,6 +84,25 @@ def handle_sequence(gesture):
     """
     plays a sequence
     """
+    speed, amp, post = request.args.get('speed'), request.args.get('amp'), request.args.get('post')
+    # print(speed, amp, post)
+    # server.speed = float(speed) if speed!=None else server.speed = 1.0 
+    # server.amp = float(amp) if amp!=None else server.amp = 1.0
+    # server.post = float(post) if post!=None else server.post = 1.0
+
+    if speed==None: speed = 1
+    if amp==None: amp = 1
+    if post==None: post = 1
+
+    server.speed = float(speed)
+    server.amp = float(amp)
+    server.post = float(post)
+
+    for bot in server.robots:
+        bot.speed = server.speed
+        bot.amp = server.amp
+        bot.post = server.post
+
     server.handle_input(server.master_robot, 's', [gesture])
     return gesture, "fired"
 
@@ -103,14 +128,16 @@ def set_position():
     # get data as string
     # data is provided as rotations wrt y,-x,-z (w/ screen facing up)
     # order is pitch/y, (-)roll/(-)x, -yaw(-z), height, ears, acc_x, acc_y, acc_z
-    raw_data = request.data
-    # print(raw_data)
     # split into measurements
+    raw_data = request.get_json()
     imu = get_imu_data(raw_data)
+    mirror = raw_data['mirror']
 
-    # get base motor positions, accounting for stored yaw position
+    global server
+    # get base motor positions, accounting for stored yaw reset position
+    adj_yaw = imu[2]-server.yaw
     pos = k.get_motor_pos(
-        [-(imu[2] - server.yaw), imu[0], -imu[1], imu[3]], [imu[4], imu[5], imu[6]])
+        [-adj_yaw, imu[0], -imu[1], imu[3]], [imu[4], imu[5], imu[6]])
     # get ear motor position
     ears_pos = k.get_ears_pos(imu[4])
     # save orientation
@@ -119,14 +146,7 @@ def set_position():
     # filter out readings below certain threshold
     accel = [imu[4], imu[5], imu[6]]
 
-    # print(accel)
     k.integrate_accel(ori, accel)
-
-    # prevent quick turning around
-    if 'base' in server.motor_pos:
-        last_yaw = server.motor_pos['base']
-        if(np.abs(last_yaw - pos[3]) > 100):
-            pos[3] = last_yaw
 
     # command positions
     motor_pos = {
@@ -136,10 +156,26 @@ def set_position():
         'base': pos[3],
         'ears': ears_pos
     }
+
+    # handle mirroring mode (swap roll for towers 2 and 3, flip yaw)
+    if (mirror):
+        motor_pos['tower_2'] = pos[2]
+        motor_pos['tower_3'] = pos[1]
+        motor_pos['base'] = -pos[3]
+
+    # prevent quick turning around
+    if 'base' in server.motor_pos:
+        last_yaw = server.motor_pos['base']
+        if(np.abs(last_yaw - motor_pos['base']) > 100):
+            motor_pos['base'] = last_yaw
+
+    # adjust the duration (numeric input to goto_position)
+    # higher (0.3) = slow+smooth, low (0.1) = jittery+fast
     for bot in server.robots:
-        bot.goto_position(motor_pos, 0.2, True)
+        bot.goto_position(motor_pos, 0.1, True)
         bot.believed_motor_pos = motor_pos
 
+    server.motor_pos = motor_pos
     return "200 OK"
 
 
@@ -148,27 +184,39 @@ def get_imu_data(raw_data):
     return the current imu values of the robot
     """
     global cur_yaw
-    imu = [0] * len(raw_data)
-    # find start/end of each number (delimit by : ,)
-    i_start = [i for i, c in enumerate(raw_data) if c == ':']
-    i_end = [i for i, c in enumerate(raw_data) if c == ',']
-    # must add for last end
-    i_end.append(-1)
+    # print(raw_data)
+    # imu = [0] * len(raw_data)
+    # # find start/end of each number (delimit by : ,)
+    # i_start = [i for i, c in enumerate(raw_data) if c == ':']
+    # i_end = [i for i, c in enumerate(raw_data) if c == ',']
+    # # must add for last end
+    # i_end.append(-1)
 
     # convert to floats
-    for i, (i_s, i_e) in enumerate(zip(i_start, i_end)):
-        imu[i] = float(raw_data[i_s + 1:i_e])
-
+    # for i, (i_s, i_e) in enumerate(zip(i_start, i_end)):
+    #     imu[i] = float(raw_data[i_s + 1:i_e])
+    imu = [raw_data['x'], raw_data['y'], raw_data['z'],
+           raw_data['h'], raw_data['ears'],
+           raw_data['ax'], raw_data['ay'], raw_data['az']]
+    # if (imu[2]<0):
+    #     imu[2] += 2*np.pi
+    # print(imu[2])
+    # if(cur_yaw-imu[2] > np.pi):
+    #     imu[2]+=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
+    # elif (imu[2]-cur_yaw > np.pi):
+    #     imu[2]-=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
+    # if (np.abs(cur_yaw-imu[2])>np.pi and cur_yaw*imu[2]<0):
+    #     print('loop')
+    #     imu[2]+=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
     cur_yaw = imu[2]
     return imu
 
 
 @app.route('/sequences')
 def get_sequences():
-    #comment below is what code used to be before time was implemented n
-    #seqs = server.master_robot.get_sequences()
+    # comment below is what code used to be before time was implemented n
     seqs = server.master_robot.get_time_sequences()
-    
+
     return jsonify(seqs)
 
 
@@ -194,6 +242,16 @@ def update_sequence(seq_id):
         if not os.path.isdir(seq_dir):
             os.makedirs(seq_dir)
         name = name[name.find('/') + 1:]
+
+    # handle collisions with existing gesture names
+    new_name = name
+    name_ctr = 1
+    # print(os.listdir(seq_dir))
+    while ((new_name + '_sequence.json') in os.listdir(seq_dir)):
+        new_name = name + '_' + str(name_ctr)
+        name_ctr += 1
+    name = new_name
+    # print(name)
 
     # temporary file
     src_file = "%s_sequence.json" % seq_id
@@ -238,6 +296,29 @@ def update_seq_file(seq_path, name, label):
     server.store_gesture(name, seq["frame_list"], label)
 
 
+# MH: I have deprecated the Google Cloud service hosting the TF model for classifying gestures because it was costing a strangely large amount of money (like $10 per day). Also, it was set up on my personal account. I will put setup instructions in the README for future generations to attempt.
+@app.route('/classify_sequence/<seq_id>')
+def get_classification(seq_id):
+    # classification_endpoint = "https://classification-service-dot-blossom-gestures.appspot.com/classify"
+    # seq_path = "%s%s/tmp/%s_sequence.json" % (SEQUENCES_DIR, server.master_robot.name, seq_id)
+    # seq = json.load(open(seq_path, "r"))
+    # r = requests.post(classification_endpoint, json=seq)
+    # return r.text
+    return "service unavailable", 503
+
+
+# MH: I have deprecated the Google Cloud service hosting the TF model for classifying gestures because it was costing a strangely large amount of money (like $10 per day). Also, it was set up on my personal account. I will put setup instructions in the README for future generations to attempt.
+@app.route('/generate')
+def generate_gesture():
+    # emotion = request.args.get('emotion') or "happy"
+    # url = "https://classification-service-dot-blossom-gestures.appspot.com/gesture?emotion=%s" % emotion
+    # r = requests.get(url)
+    # json_data = json.loads(r.text)
+    # server.master_robot.play_seq_json(json_data)
+    # return "okay"
+    return "service unavailable", 503
+
+
 @app.route('/videos')
 def get_videos():
     """
@@ -270,8 +351,9 @@ def reset_sensors():
     move blossom to the yaw = 0 position
     """
     # reset robot position
+    global server
     server.master_robot.reset_position()
-
+    server.motor_pos = server.master_robot.reset_pos
     # get current yaw reading and store it
     server.yaw = cur_yaw
     return "200 OK"
