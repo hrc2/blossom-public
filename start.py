@@ -14,7 +14,7 @@ import os
 import shutil
 import signal
 from config import RobotConfig
-from src import robot
+from src import robot, sequence
 from src.server import server
 from src import server as srvr
 import threading
@@ -25,9 +25,9 @@ from pypot.dynamixel.controller import DxlError
 import random
 import time
 import logging
-from google.cloud import datastore
 import uuid
 from src import firebase_control as fc
+import requests
 
 # seed time for better randomness
 random.seed(time.time())
@@ -36,10 +36,6 @@ random.seed(time.time())
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
-# using GCP to store new gestures
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./src/gcp_key.json"
-datastore_client = datastore.Client()
-
 # main robot
 master_robot = None
 # list of robots
@@ -47,6 +43,10 @@ robots = []
 second_robot = None
 # speed factor to playback sequences
 speed = 1.0
+# amplitude factor
+amp = 1.0
+# posture factor
+post = 0.0
 
 # yarn process (for web/UI stuff)
 yarn_process = None
@@ -54,14 +54,21 @@ yarn_process = None
 # CLI prompt
 prompt = "(l)ist sequences / (s)equence play / (q)uit: "
 
+
 class SequenceRobot(robot.Robot):
     """
     Robot that loads, plays, and records sequences
     Extends Robot class
     """
+
     def __init__(self, name, config):
         # init robot
-        super(SequenceRobot, self).__init__(config, 1000000, name)
+        if (name!='vyo'):
+            br = 1000000
+        else:
+            br = 57600
+        br=57600
+        super(SequenceRobot, self).__init__(config, br, name)
         # save configuration (list of motors for PyPot)
         self.config = config
         # threads for playing and recording sequences
@@ -69,6 +76,12 @@ class SequenceRobot(robot.Robot):
         self.rec_thread = self.rec_stop = None
         # load all sequences for this robot
         self.load_seq()
+
+        # speed, amp range from 0.5 to 1.5
+        self.speed = 1.0
+        self.amp = 1.0
+        # posture ranges from -100 to 100
+        self.post = 0.0
 
     def load_seq(self):
         """
@@ -97,7 +110,6 @@ class SequenceRobot(robot.Robot):
                     if (s[-5:] == '.json'):
                         self.load_sequence(subseq_dir + '/' + s)
 
-
     def assign_time_length(self, keys, vals):
         timeMap = [None] * len(keys)
         for i in range(0, len(keys)):
@@ -111,15 +123,35 @@ class SequenceRobot(robot.Robot):
         tempVals = self.seq_list.values()
         tempMap = self.assign_time_length(tempKeys, tempVals)
         return tempMap
-        
+
     def get_sequences(self):
         """
         Get all sequences loaded on robot
         """
         return self.seq_list.keys()
 
+    def play_seq_json(self, seq_json):
+        """
+        Play a sequence from json
+        args:
+            seq_json    sequence raw json
+            idler       whether to loop sequence or not
+        returns:
+            the thread setting motor position in the sequence
+        """
+        seq = sequence.Sequence.from_json_object(seq_json, rad=True)
+        # create stop flag object
+        self.seq_stop = threading.Event()
 
-    def play_recording(self, seq, idler=False):
+        # start playback thread
+        self.seq_thread = robot.sequence.SequencePrimitive(
+            self, seq, self.seq_stop, speed=speed, amp=amp, post=post)
+        self.seq_thread.start()
+
+        # return thread
+        return self.seq_thread
+
+    def play_recording(self, seq, idler=False, speed=speed, amp=amp, post=post):
         """
         Play a recorded sequence
         args:
@@ -138,12 +170,11 @@ class SequenceRobot(robot.Robot):
 
         # start playback thread
         self.seq_thread = robot.sequence.SequencePrimitive(
-            self, self.seq_list[seq], self.seq_stop, idler=idler, speed=speed)
+            self, self.seq_list[seq], self.seq_stop, idler=idler, speed=self.speed, amp=self.amp, post=self.post)
         self.seq_thread.start()
 
         # return thread
         return self.seq_thread
-
 
     def start_recording(self):
         """
@@ -156,7 +187,6 @@ class SequenceRobot(robot.Robot):
         self.rec_thread = robot.sequence.RecorderPrimitive(self, self.rec_stop)
         self.rec_thread.start()
 
-   
     def calibrate(self):
         """
         Calibrate the resting height of the robot
@@ -190,6 +220,7 @@ class SequenceRobot(robot.Robot):
 CLI Code
 '''
 
+
 def start_cli(robot):
     """
     Start CLI as a thread
@@ -216,6 +247,7 @@ def run_cli(robot):
 
         # handle the command and arguments
         handle_input(master_robot, cmd, args)
+
 
 def handle_quit():
     """
@@ -252,8 +284,10 @@ def handle_input(robot, cmd, args=[]):
         cmd: a robot command
         args: additional args for the command
     """
-    # manipulate the global speed var
-    global speed
+    # manipulate the global speed and amplitude vars
+    # global speed
+    # global amp
+    # global post
 
     # separator between sequence and idler
     idle_sep = '='
@@ -286,6 +320,14 @@ def handle_input(robot, cmd, args=[]):
         if (seq == 'calm' or seq == 'slowlook' or seq == 'sideside'):
             idle_seq = seq
 
+        # speed = 1.0
+        # amp = 1.0
+        # post = 0.0
+
+        # if (len(args)>=2) : speed = args[1]
+        # if (len(args)>=3) : amp = args[2]
+        # if (len(args)>=4) : post = args[3]
+
         # play the sequence if it exists
         if seq in robot.seq_list:
             # iterate through all robots
@@ -297,6 +339,8 @@ def handle_input(robot, cmd, args=[]):
             # go into idler
             if (idle_seq != ''):
                 while (seq_thread.is_alive()):
+                    # sleep necessary to smooth motion
+                    time.sleep(0.1)
                     continue
                 for bot in robots:
                     if not bot.seq_stop:
@@ -305,14 +349,19 @@ def handle_input(robot, cmd, args=[]):
                     bot.play_recording(idle_seq, idler=True)
         # sequence not found
         else:
-            print("Unknown sequence name!")
+            print("Unknown sequence name:", seq)
             return
 
     # record sequence
+    # elif cmd == 'r':
+    #     record(robot)
+    #     input("Press 'enter' to stop recording")
+    #     stop_record(robot, input("Seq name: "))
+
+    # reload gestures
     elif cmd == 'r':
-        record(robot)
-        input("Press 'enter' to stop recording")
-        stop_record(robot, input("Seq name: "))
+        for bot in robots:
+            bot.load_seq()
 
     # list and print sequences (only for the first attached robot)
     elif cmd == 'l':
@@ -339,8 +388,17 @@ def handle_input(robot, cmd, args=[]):
                 bot.goto_position({args[0]: float(args[1])}, 0, True)
 
     # adjust speed
-    elif cmd =='e':
-        speed = float(raw_input('Speed factor: '))
+    elif cmd == 'e':
+        for bot in robots:
+            bot.speed = float(raw_input('Speed factor: '))
+    # adjust amplitude
+    elif cmd == 'a':
+        for bot in robots:
+            bot.amp = float(raw_input('Amplitude factor: '))
+    # adjust posture
+    elif cmd == 'p':
+        for bot in robots:
+            bot.post = float(raw_input('Posture factor: '))
 
     # help
     elif cmd == 'h':
@@ -366,7 +424,7 @@ def record(robot):
     Start new recording session on the robot
     """
     # reset robot's position
-    robot.reset_position()
+    # robot.reset_position()
     # stop recording if one is happening
     if not robot.rec_stop:
         robot.rec_stop = threading.Event()
@@ -408,18 +466,19 @@ def store_gesture(name, sequence, label=""):
         sequence: the sequence dict
         label: a label for the sequence
     """
-    if datastore_client:
-        key = datastore_client.key("Gesture")
-        gesture = datastore.Entity(key=key)
-        gesture["sequence"] = sequence
-        gesture["label"] = label
-        gesture["name"] = name
-        datastore_client.put(gesture)
+    url = "https://classification-service-dot-blossom-gestures.appspot.com/gesture"
+    payload = {
+        "name": name,
+        "sequence": sequence,
+        "label": label,
+    }
+    requests.post(url, json=payload)
 
 
 '''
 Main Code
 '''
+
 
 def start_server(host, port, hide_browser):
     """
@@ -472,6 +531,7 @@ def main(args):
 
     # use first name as master
     configs = RobotConfig().get_configs(args.names)
+    # print(configs)
     master_robot = safe_init_robot(args.names[0], configs[args.names[0]])
     configs.pop(args.names[0])
     # start robots
@@ -482,7 +542,11 @@ def main(args):
     master_robot.reset_position()
 
     # put ip address of machine in firebase
-    fc.fb_put(args.names[0],'ip',args.host)
+    # requests.exceptions.HTTPError when firebase is offline
+    try:
+        fc.fb_put(args.names[0], 'ip', args.host)
+    except Exception:
+        pass
 
     # start CLI
     start_cli(master_robot)
@@ -526,7 +590,7 @@ def parse_args(args):
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--names', '-n', type=str, nargs='+',
-                        help='Name of the robot.', default=["blossom"])
+                        help='Name of the robot.', default=["woody"])
     parser.add_argument('--port', '-p', type=int,
                         help='Port to start server on.', default=8000)
     parser.add_argument('--host', '-i', type=str, help='IP address of webserver',
@@ -536,6 +600,7 @@ def parse_args(args):
     parser.add_argument('--list-robots', '-l',
                         help='list all robot names', action='store_true')
     return parser.parse_args(args)
+
 
 """
 Generic main handler

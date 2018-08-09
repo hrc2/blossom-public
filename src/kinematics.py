@@ -108,8 +108,14 @@ def get_motor_pos(ori,accel):
 
     # constrain tower motor range (50-130)
     motor_pos = np.maximum(np.minimum(motor_pos+h,h_max),h_min)
+    if (e_1 < -np.pi):
+        e_1+=2*np.pi
+    elif(e_1 > np.pi):
+        e_1-=2*np.pi
+    # e_1-=np.pi
     # add the base motor for yaw (-140,140)
-    motor_pos = np.append(motor_pos,np.maximum(np.minimum(np.rad2deg(1.5*e_1),140),-140))
+    motor_pos = np.append(motor_pos,np.maximum(np.minimum(np.rad2deg(1.3*e_1),140),-140))
+    # motor_pos = np.append(motor_pos, np.rad2deg(e_1))
     # motor_pos = np.append(motor_pos,np.rad2deg(e_1))
     return motor_pos
 
@@ -125,11 +131,11 @@ def get_ears_pos(e):
     # define range of ears
     ears_range = 50
     # define center of ears
-    ears_offset = 80
+    ears_offset = 100
 
     # interpolate from slider range (0-100)
     e_pos = (e-50)*(ears_range/50.0)+ears_offset
-    
+    # print(e_pos)
     return e_pos
 
 def fwd_kin(m):

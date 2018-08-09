@@ -142,6 +142,31 @@ class RobotConfig(object):
                     }
                 }
             },
+            'vyo': {
+                'controllers': {
+                    'my_dxl_controller': {
+                        'sync_read': False,
+                        # 'attached_motors': ['bases', 'head'],
+                        'attached_motors': ['head'],
+                        'port': 'auto',
+                        'baudrate': 57600,
+                        'protocol': 1
+                    }
+                },
+                'motorgroups': {
+                    # 'bases': ['base'],
+                    'head': ['hip']
+                },
+                'motors': {
+                    'hip': {
+                        'orientation': 'direct',
+                        'type': 'MX-28',
+                        'id': 1,
+                        'angle_limit': [-10, 10],
+                        'offset': 0.0
+                    }
+                }
+            },
             'test': {
                 'controllers': {
                 },
@@ -171,6 +196,7 @@ class RobotConfig(object):
         for name in names:
             if name in self.configs:
                 configs.append((name, self.configs[name]))
+        # print(configs)
 
         # get IDs for connected motors
         used_configs = []
@@ -179,11 +205,14 @@ class RobotConfig(object):
                 print("No ports available")
                 sys.exit(1)
             try:
-                if (names[0]!='blossom'):
+                if (names[0]!='blossom' and names[0]!='vyo'):
                     dxl_io = pd.Dxl320IO(port)
                 else:
-                    dxl_io = pd.DxlIO(port)
-                scanned_ids = dxl_io.scan(range(8))
+                    if (names[0]=='vyo'):
+                        dxl_io = pd.DxlIO(port,57600)
+                    else:
+                        dxl_io = pd.DxlIO(port)
+                scanned_ids = dxl_io.scan(range(20))
             # handle unopenable serial port
             except SerialException as e:
                 print(e)

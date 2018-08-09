@@ -5,7 +5,7 @@ import copy
 import numpy as np
 import os
 
-class Sequence:
+class Sequence():
     """
     Sequence of Frames to be loaded/stored/played back
     """
@@ -16,6 +16,7 @@ class Sequence:
     def __init__(self, seq_name, frames=[]):
         self.seq_name = seq_name
         self.frames = frames
+        # print(self.to_list())
 
     @classmethod
     def from_json(cls, seq_fn, rad=False):
@@ -28,18 +29,35 @@ class Sequence:
             loaded sequence
         """
         # open sequence
-        seq_f = open(seq_fn)
-        seq = json.load(seq_f)
+        with open(seq_fn) as seq_f:
+            seq_f = open(seq_fn)
+            seq = json.load(seq_f)
 
-        # get relative path from robot's directory
-        robot_dir = seq_fn.find('sequences')+len('sequences')+1
-        seq_fn = seq_fn[seq_fn[robot_dir:].find('/'):]
+            # get relative path from robot's directory
+            robot_dir = seq_fn.find('sequences')+len('sequences')+1
+            seq_fn = seq_fn[seq_fn[robot_dir:].find('/'):]
 
-        # sequence name includes subdirectory (e.g. grand/grand9)
-        seq_name = seq_fn[robot_dir+1:seq_fn.rfind('_')]
-
-        seq_f.close()
+            # sequence name includes subdirectory (e.g. grand/grand9)
+            seq_name = seq_fn[robot_dir+1:seq_fn.rfind('_')]
         return cls(seq_name, cls.convert_frames(seq, rad))
+
+    @classmethod
+    def from_json_object(cls, seq_json, rad=False):
+        """
+        Init from json object
+        args:
+            seq_json  raw json object representing sequence
+        returns:
+            loaded sequence
+        """
+        return cls("temp", cls.convert_frames(seq_json, rad))
+
+    @classmethod
+    def from_list(cls, dof_list, millis_list, pos_list,seq_name=''):
+        frames = []
+        for i,m in enumerate(millis_list):
+            frames.append(Frame(m,{dof:dof_p[i] for dof,dof_p in zip(dof_list,pos_list)}))
+        return cls(seq_name, frames)
 
     @staticmethod
     def convert_frames(seq, rad=False):
@@ -78,15 +96,15 @@ class Sequence:
     # convert to list
     # include DoFs, times, and motor positions
     # assume DoFs are ordered and static throughout the sequence
-    @staticmethod
-    def to_list():
+    # @classmethod
+    def to_list(self,millis_inc=0):
         """
         Return sequence as a tuple for numerical analysis
         returns:
             (list of DoFs, list of Frame times, list of Frame positions)
         """
         # get DoFs from first frame
-        f_0 = frames[0]
+        f_0 = self.frames[0]
         dofs = f_0.positions.keys()
 
         # init lists of times and motor positions
@@ -94,13 +112,43 @@ class Sequence:
         motor_pos_list = []
 
         # iterate through all frames
-        for f in frames:
+        for f in self.frames:
             # add time
             millis_list.append(f.millis)
             # add positions
             motor_pos_list.append(f.positions.values())
 
+        # transpose so that each row (major index) is all pos for 1 DoF
+        motor_pos_list = np.array(motor_pos_list).T
+        # interpolate if 
+        if (millis_inc>0):
+            pos_interp = []
+            t_start = millis_list[0]
+            t_end = millis_list[-1]
+            millis_interp = np.arange(t_start,t_end,millis_inc)
+            for i in range(len(dofs)):
+                pos_interp.append(np.interp(millis_interp,millis_list,motor_pos_list[i]))
+            millis_list = millis_interp
+            motor_pos_list = pos_interp
+
         return (dofs, millis_list, motor_pos_list)
+
+    def to_file(self,seq_name='',robot_dir='./'):
+        # append number to file name if it already exists
+        if (seq_name == ''):
+            seq_name = self.seq_name
+        name_ctr = 1
+        init_name = seq_name
+        while (seq_name+'_sequence.json' in os.listdir(robot_dir)):
+            seq_name = init_name+'_'+str(name_ctr)
+            name_ctr = name_ctr+1
+
+        # construct frames list
+        frames_list = [{'positions':[{'dof':dof[0],'pos':dof[1]} for dof in f.positions.iteritems()],'millis':f.millis} for f in self.frames]
+
+        # save to file
+        with open(robot_dir + seq_name + '_sequence.json', 'w') as seq_file:
+            json.dump({'animation': seq_name, 'frame_list': frames_list}, seq_file, indent=2)
 
 class Frame:
     """
@@ -152,9 +200,9 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
     """
     PyPot Primitive to handle Sequence playback
     """
-    def __init__(self, robot, seq, seq_stop, idler=False, speed=1.0, amp = 1.0):
+    def __init__(self, robot, seq, seq_stop, idler=False, speed=1.0, amp = 1.0, post=0.0):
         # the robot object (extends PyPot.Robot)
-        self.Robot = robot 
+        self.Robot = robot
         # the PyPot.Robot object
         self.robot = robot.robot
         # the Sequence
@@ -165,10 +213,13 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
         self.motor_pos = self.Robot.get_motor_pos
         # whether idler or not
         self.idler = idler
+
         # playback speed
         self.speed = speed
         # playback amplitude
         self.amp = amp
+        # playback posture (>1.0 = lean forward, <1.0 = lean backward)
+        self.post = post
 
         # not idler
         if (not self.idler):
@@ -199,6 +250,13 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
         start_time = time.time()
         # init time
         cur_time = 0
+
+        # save initial frame
+        f_0 = frames[0]
+        f_0_pos = f_0.positions
+
+        # print playback params
+        print(self.speed, self.amp, self.post)
 
         # iterate through all frames
         for f in frames:
@@ -247,29 +305,68 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
             next_pos = f_copy.positions
             # find distance to travel for each motor
             d_pos = {}
+            goal_pos = {}
+            vel_pos = {}
             # iterate through all motors
             for dof_key in next_pos.keys():
                 # get difference between goal and current position
                 motor_pos_dof = self.motor_pos[dof_key]
                 next_pos_dof = next_pos[dof_key]
+                # adjust posture
+                if (dof_key == 'tower_1'):
+                    next_pos_dof = next_pos_dof + self.post
+                elif (dof_key == 'tower_2' or dof_key == 'tower_3'):
+                    nex_pos_dof = next_pos_dof - self.post
+
+                del_pos_dof = next_pos_dof - f_0_pos[dof_key]
+                # adjust by the amplitude
+                del_pos_dof_adj = del_pos_dof*self.amp
+
+                # scale position by amplitude
+                next_pos_dof = del_pos_dof_adj + f_0_pos[dof_key]
+                # restrict motor range
+                next_pos_dof = np.maximum(self.Robot.range_pos[dof_key][0],np.minimum(self.Robot.range_pos[dof_key][1],next_pos_dof))
+
+                # update dictionary
+                # next_pos[dof_key] = next_pos_dof
                 # add distance to dictionary
-                d_pos.update({dof_key:np.abs(next_pos_dof-motor_pos_dof)})
+                d_pos.update({dof_key:(next_pos_dof-f_0_pos[dof_key])})
+                goal_pos.update({dof_key:next_pos_dof})
+
+                # map to velocity with *arbitrary* params based on the current DoF
+                vel = np.interp(np.abs(d_pos[dof_key]),[0,100],[0.1,1])
+                if (dof_key=='base'):
+                    vel = np.interp(np.abs(d_pos[dof_key]),[0,300],[0.2,3])
+                # vel_pos.append(vel)
+                vel_pos.update({dof_key:vel})
+
             # map distance to velocity
             # vel = np.interp(del_pos,[0,100],[0,1])
 
             # self.robot.goto_position(next_pos, duration=t_delay*(1.0/vel), wait=False)
             # command each motor
-            for m,p in next_pos.iteritems():
-                # calculate the velocity by which to scale the time delay
-                vel = np.interp(d_pos[m],[0,100],[0.1,1])
+            # print(goal_pos.values())
 
-                # hotfix for base 4 rotation
-                if (m=='base'):
-                    vel = np.interp(d_pos[m],[0,200],[0.5,1])
-                # command the motor
-                # the time delay is used to determine the velocity,
-                # but don't actually wait for it
-                self.robot.goto_position({m:p},duration=t_delay*(1.0/vel), wait=False)
+            # for m,p in goal_pos.iteritems():
+            #     # calculate the velocity by which to scale the time delay
+            #     vel = np.interp(np.abs(d_pos[m]),[0,100],[0.1,1])
+
+            #     # hotfix for base 4 rotation
+            #     if (m=='base'):
+            #         vel = np.interp(np.abs(d_pos[m]),[0,200],[0.5,1])
+            #     # command the motor
+            #     # the time delay is used to determine the velocity,
+            #     # but don't actually wait for it
+            #     self.robot.goto_position({m:p},duration=t_delay*(1.0/vel), wait=False)
+
+            # take average normalized velocity, move motors synchronously
+            # vel = np.average(vel_pos)
+            # self.robot.goto_position(goal_pos,duration=t_delay*(1.0/vel),wait=False)
+
+            # move motors with respective velocities
+            for m,p in goal_pos.iteritems():
+                self.robot.goto_position({m:p},duration=t_delay*(1.0/vel_pos[m]),wait=False)
+
             time.sleep(t_delay)
 
             # show difference taken between time according to frame and actual time to execute

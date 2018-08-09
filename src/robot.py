@@ -9,7 +9,7 @@ class Robot(object):
     Extends functionality to handle sequences
     """
     # initialize robot
-    def __init__(self, config, baudrate=1000000, name=''):
+    def __init__(self, config, baudrate=57600, name=''):
         # init list of motors
         self.motors = {}
         # init list of sequences
@@ -32,12 +32,21 @@ class Robot(object):
 
         # reset to resting position
         self.reset_pos = {
-                            'tower_1':100,
-                            'tower_2':100,
-                            'tower_3':100,
-                            'base':0, 
+                            'tower_1':50,
+                            'tower_2':50,
+                            'tower_3':50,
+                            'base':0,
                             'ears':100
                         }
+
+        self.range_pos = {
+                            'tower_1':(-40,140),
+                            'tower_2':(-40,140),
+                            'tower_3':(-40,140),
+                            'base':(-140,140),
+                            'ears':(0,140)
+                        }
+
         # init robot's believed position
         self.believed_motor_pos = self.reset_pos
         self.reset_position()
@@ -106,7 +115,10 @@ class Robot(object):
             rad     whether source is in radians
         """
         seq = sequence.Sequence.from_json(seq_fn, rad)
-        self.add_sequence(seq)
+
+        # don't add if sequence name already exists
+        if (not seq.seq_name in self.seq_list.keys()):
+            self.add_sequence(seq)
 
     def add_sequence(self, seq):
         """
@@ -115,6 +127,11 @@ class Robot(object):
             seq     the Sequence object to add
         """
         # add sequence
-        self.seq_list.update({seq.seq_name: seq})
+        seq_name = seq.seq_name
+        name_ctr = 1
+        while (seq_name in self.seq_list):
+            seq_name = seq.seq_name+'_'+str(name_ctr)
+            name_ctr+=1
+        self.seq_list.update({seq_name: seq})
         # ensure that the list stays in sorted alphabetical order
-        [self.seq_list.update({s:self.seq_list[s]}) for s in sorted(self.seq_list.keys())]
+        self.seq_list = collections.OrderedDict([(s,self.seq_list[s]) for s in sorted(self.seq_list.keys())])
