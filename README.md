@@ -9,10 +9,6 @@ Here are two examples of Blossom robots:
 
 **For any questions (assembly or software related), [please check/make public issues](https://github.com/hrc2/blossom-public/issues).**
 
-## Building Blossom
-
-To build your own Blossom, check out the [Build Guide](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
-
 ## Get repo
 In a terminal, clone this repo
 ```
@@ -20,7 +16,7 @@ git clone https://github.com/hrc2/blossom-public/
 ```
 _Download through a package will be added in the future._
 
-## Setup
+## Setup Software Dependencies
 
 Make sure you're using [Python `2.7`](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html).
 
@@ -32,12 +28,7 @@ virtualenv venv
 source venv/bin/activate
 ```
 
-### Interfaces
-To be able to run the web UI or start the mobile app, install [yarn](https://yarnpkg.com/lang/en/docs/install/).
-
-Then `cd` into the `blossom_web` directory and run `yarn install`.
-
-### Server
+### General Setup
 To install dependencies, run
 ```
 pip install -r requirements.txt
@@ -65,6 +56,19 @@ _Installation will take longer on a Raspberry Pi, and you may need additional de
 ```
 sudo apt-get install xvfb
 ```
+
+### Setup for Web / Mobile UI
+To be able to run the web UI or start the mobile app, install [yarn](https://yarnpkg.com/lang/en/docs/install/).
+
+Then `cd` into the `blossom_web` directory and run `yarn install`.
+
+## Building Blossom
+
+To build your own Blossom, check out the [Build Guide](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
+
+_Note that you need to have the basic software set up to correctly build Blossom_
+
+## Running Blossom 
 
 ### CLI
 To start the CLI, plug Blossom in and run
