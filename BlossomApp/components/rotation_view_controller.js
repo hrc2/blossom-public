@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { DangerZone } from 'expo';
-import { StyleSheet, Slider } from 'react-native';
+import { StyleSheet, Slider, StatusBar, Platform, View, ScrollView } from 'react-native';
 import { ResetButton } from './reset_button';
 import { Content, Button, Text, Switch } from 'native-base';
 
@@ -135,6 +135,7 @@ export class RotationViewController extends React.Component {
       <Content style={styles.form}>
         <Text>Control Robot</Text>
         <Switch
+          style={{height: 35}}
           value={this.state.sendData}
           onValueChange={this.handleToggle}
           disabled={badHost || badPort || this.state.badSensor} />
@@ -147,6 +148,7 @@ export class RotationViewController extends React.Component {
       <Content>
         <Text>Height: {this.state.hDisp}</Text>
         <Slider
+          style={{transform: [{rotate: '270deg'}], height: 300}}
           ref={r => this.slider = r}
           disabled={!this.state.sendData}
           minimumValue={0}
@@ -185,10 +187,9 @@ export class RotationViewController extends React.Component {
 
   render() {
     const port = this.state.port ? ":" + this.state.port : "";
+
     return (
       <Content>
-        <Text>Sending data to:</Text>
-        <Text>{this.state.host + port}</Text>
         { this.renderForm() }
         { this.renderHeightSlider() }
         <ResetButton onReset={this.handleReset} />
@@ -203,7 +204,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   form: {
-    paddingTop: 60,
+    paddingTop: 10,
   },
   earSlider: {
     paddingBottom: 50,

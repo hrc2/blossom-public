@@ -4,6 +4,7 @@ import { Font } from 'expo';
 import SocketStore from '../stores/socket_store';
 import { Provider } from 'react-redux';
 import { BlossomApp } from '../components/blossom_app.js';
+import { ConnectionStatus } from '../components/connection_status';
 
 export class DefaultScreen extends React.Component {
   state = {
@@ -29,6 +30,7 @@ export class DefaultScreen extends React.Component {
         <Container>
           <Content>
             <BlossomApp>
+              <ConnectionStatus />
               { this.props.children }
             </BlossomApp>
           </Content>

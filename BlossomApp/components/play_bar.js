@@ -20,43 +20,40 @@ export class PlayBar extends React.Component {
     this.changeLoop = this.changeLoop.bind(this);
   }
 
-  playSeq(){
-    this.props.onPlay(); }
+  playSeq() {
+    this.props.onPlay();
+  }
 
-  changeLoop(){
+  changeLoop() {
     var isLoop = ! (this.state.isLooping);
     this.setState({isLooping: isLoop});
     this.props.setIdle(isLoop);
   }
 
-
-
   render() {
+    var c = this.props.isPlaying ? "md-pause" : "md-play";
 
-
-    var c = "md-play";
-    if(this.props.isPlaying == true)
-      c = "md-pause";
-
-        return (
-            <View style={styles.container}>
-
-              <View style={styles.buttonContainer}>
-                <LoopButton isLoop={this.props.shouldLoop}
-                    loopChange = {this.changeLoop}/>
-              </View>
-              <Icon name={c} size={80} color="#99ccff"
-              onPress = {this.playSeq}
-              style={styles.buttonContainer}/>
+    return (
+        <View style={styles.container}>
+            <View style={styles.buttonContainer}>
+                <LoopButton
+                    isLoop={this.props.shouldLoop}
+                    loopChange={this.changeLoop}
+                />
             </View>
-        );
-    }
 
+            <Icon
+                name={c} size={80} color="#99ccff"
+                onPress={this.playSeq}
+                style={styles.buttonContainer}
+            />
+        </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
     container: {
-
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',

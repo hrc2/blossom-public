@@ -7,7 +7,7 @@ import SocketAction from '../actions/socket_actions';
 import {PlayBar} from '../components/play_bar';
 import { StyleSheet, View } from 'react-native';
 import {PauseTimer} from '../components/pause_timer';
-
+import { ConnectionStatus } from '../components/connection_status';
 
 export class SequencesScreen extends React.Component {
   constructor(){
@@ -30,7 +30,7 @@ export class SequencesScreen extends React.Component {
   }
 
   setIdling(shouldRepeat){
-    this.setState({idling: shouldRepeat,});
+    this.setState({idling: shouldRepeat});
   }
 
   componentDidMount() {
@@ -109,22 +109,18 @@ export class SequencesScreen extends React.Component {
 
   setSequence(str){
     this.setState({storedSequence: str,
-    useSequence: true,});
-    this.setState({isPlaying:true,});
+    useSequence: true});
+    this.setState({isPlaying:true});
     this.playSequence(str);
-
-
   }
 
 
   render() {
-
     var storedTime = 0;
     if(this.state.storedSequence != null && this.state.storedSequence != ""){
       storedTime = this.state.storedSequence.split(" - ")[1];
       console.log(storedTime + "storedTime" + this.state.storedSequence);
       storedTime = parseFloat(storedTime.split("sec")[0]);
-
     }
 
     var pTimer = null;
@@ -142,11 +138,12 @@ export class SequencesScreen extends React.Component {
     return (
       <View  style={styles.screenScroll} scrollEnabled={false}>
         {pTimer}
+        <ConnectionStatus />
         <SequenceButtonCollection
           onPress={this.setSequence}
           activeSeq={this.state.storedSequence}/>
         <PlayBar
-          isPlaying = {this.state.isPlaying}
+          isPlaying={this.state.isPlaying}
           onPlay={this.setPlayTrue}
           shouldLoop={this.state.idling}
           setIdle={this.setIdling} />
@@ -159,8 +156,9 @@ const styles = StyleSheet.create({
   screenScroll: {
       width: '100%',
       position: 'absolute',
+      marginBottom: 0
   },
-  button: {marginBottom: 10,},
+  button: {marginBottom: 10},
   seqList: {
     flex: 1, // not working
   }
