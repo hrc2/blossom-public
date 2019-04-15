@@ -20,11 +20,13 @@ _Download through a package will be added in the future._
 
 Make sure you're using [Python `2.7`](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html).
 
+To check, run `python2.7` in the terminal and make sure it says "Python 2.7...." on the first line. 
+
 Also ensure that [`pip` is installed](https://pip.pypa.io/en/stable/installing/).
 
 Make a `venv` (virtual environment) in the top `blossom` directory:
 ```
-virtualenv venv
+virtualenv -p `which python2.7` venv
 source venv/bin/activate
 ```
 
