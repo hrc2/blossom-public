@@ -10,6 +10,11 @@ motor_id = motors.scan(range(20))
 if (len(motor_id)>1):
     print("Only connect one motor at a time!")
     quit()
+
+if (len(motor_id)<1):
+	print("No connected motors found! Did you remember to connect external power?")
+	quit()
+	
 motor_id = motor_id[0]
 
 print("Motor "+str(motor_id)+" found!")
