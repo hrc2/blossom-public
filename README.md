@@ -107,7 +107,7 @@ The GUI _should_ be accessible via `localhost:8000` after starting up the CLI if
 
 **Installation**
 
-The app can be installed on [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) via the Expo Client app. Then, find the last stable release by searching for `https://exp.host/@psychomugs/blossom-app`.
+The app can be installed on [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) via the Expo Client app. Then, find the last stable release by searching for `https://exp.host/@hrc2/blossom-app`.
 
 **Controlling the robot**
 
