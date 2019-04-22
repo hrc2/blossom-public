@@ -1,4 +1,5 @@
 import pypot.dynamixel as pd
+import time
 
 # get ports and start connection to motors
 ports = pd.get_available_ports()
@@ -19,6 +20,19 @@ motor_id = motor_id[0]
 
 print("Motor "+str(motor_id)+" found!")
 
+new_id_str = raw_input("Enter motor ID (1-3 for towers, 4 for base, 5+ for etc). Press enter to leave the ID as is: ")
+
+if new_id_str != '':
+    new_id = int(new_id_str)
+    print("Changing motor ID changed from "+str(motor_id)+" to "+str(new_id))
+    motors.change_id({motor_id:new_id})
+    time.sleep(0.2)
+
+    if (motors.ping(new_id) == True):
+        motor_id = new_id
+    else:
+        print("Sorry, didn't work. Unplug and replug the motor and run again.")
+
 # set motor to 100
 motors.set_goal_position({motor_id:100})
 raw_input("Motor position: 100; Attach horn then press 'Enter'. ")
@@ -30,10 +44,5 @@ raw_input("Motor position: 0; Calibrate string length then press 'Enter'. ")
 # set motor back to 100
 motors.set_goal_position({motor_id:100})
 print("Motor position: 100; Calibration complete!")
-
-# change ID
-new_id = int(raw_input("Enter motor ID (1-3 for towers, 4 for base, 5+ for etc): "))
-motors.change_id({motor_id:new_id})
-print("Motor ID changed from "+str(motor_id)+" to "+str(new_id))
 
 quit()
