@@ -24,6 +24,7 @@ new_id_str = raw_input("Enter motor ID (1-3 for towers, 4 for base, 5+ for etc).
 
 if new_id_str != '':
     new_id = int(new_id_str)
+    motors.disable_torque([motor_id])
     print("Changing motor ID changed from "+str(motor_id)+" to "+str(new_id))
     motors.change_id({motor_id:new_id})
     time.sleep(0.2)
