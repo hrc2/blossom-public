@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DangerZone } from 'expo';
+import { DeviceMotion } from 'expo-sensors'
 import { StyleSheet, Slider, StatusBar, Platform, View, ScrollView } from 'react-native';
 import { ResetButton } from './reset_button';
 import { Content, Button, Text, Switch } from 'native-base';
@@ -30,7 +30,7 @@ export class RotationViewController extends React.Component {
     this.handleData = this.handleData.bind(this);
     this.handleReset = this.handleReset.bind(this);
 
-    this.sensorListener = DangerZone.DeviceMotion.addListener(this.handleData);
+    this.sensorListener = DeviceMotion.addListener(this.handleData);
 
     this.unsubscibe = SocketStore.subscribe(() => {
       const newState = SocketStore.getState();
