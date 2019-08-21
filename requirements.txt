@@ -44,4 +44,4 @@ subprocess32==3.2.7
 sympy==1.1.1
 tornado==5.0.1
 urllib3>=1.23
-Werkzeug==0.14.1
+Werkzeug==0.15.3
