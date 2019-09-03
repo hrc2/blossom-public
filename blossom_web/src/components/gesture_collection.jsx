@@ -26,13 +26,13 @@ export class GestureCollection extends React.Component {
   }
 
   render() {
-    const filteredSeqs = this.state.sequences.filter(seq => seq.toLowerCase().includes(this.props.filter) );
+    const filteredSeqs = this.state.sequences.filter(seq => seq.toString().toLowerCase().includes(this.props.filter) );
 
     return (
       <div className="sequence-list">
         {
           filteredSeqs.map(seq => {
-            return <GestureButton key={seq} name={seq} />
+            return <GestureButton key={seq[0]} name={seq[0]} />
           })
         }
      </div>

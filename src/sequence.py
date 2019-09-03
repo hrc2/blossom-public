@@ -33,7 +33,7 @@ class Sequence():
             seq_f = open(seq_fn)
             seq = json.load(seq_f)
 
-            # get relative path from robot's directory
+            # get relative path from robot's direct ory
             robot_dir = seq_fn.find('sequences')+len('sequences')+1
             seq_fn = seq_fn[seq_fn[robot_dir:].find('/'):]
 
@@ -105,7 +105,7 @@ class Sequence():
         """
         # get DoFs from first frame
         f_0 = self.frames[0]
-        dofs = f_0.positions.keys()
+        dofs = list(f_0.positions.keys())
 
         # init lists of times and motor positions
         millis_list = []
@@ -116,7 +116,7 @@ class Sequence():
             # add time
             millis_list.append(f.millis)
             # add positions
-            motor_pos_list.append(f.positions.values())
+            motor_pos_list.append(list(f.positions.values()))
 
         # transpose so that each row (major index) is all pos for 1 DoF
         motor_pos_list = np.array(motor_pos_list).T
@@ -133,22 +133,27 @@ class Sequence():
 
         return (dofs, millis_list, motor_pos_list)
 
-    def to_file(self,seq_name='',robot_dir='./'):
+    def to_file(self,seq_name='',robot_dir='./',force=False):
         # append number to file name if it already exists
         if (seq_name == ''):
             seq_name = self.seq_name
         name_ctr = 1
         init_name = seq_name
-        while (seq_name+'_sequence.json' in os.listdir(robot_dir)):
-            seq_name = init_name+'_'+str(name_ctr)
-            name_ctr = name_ctr+1
+        if not force:
+            while (seq_name+'_sequence.json' in os.listdir(robot_dir)):
+                seq_name = init_name+'_'+str(name_ctr)
+                name_ctr = name_ctr+1
 
         # construct frames list
-        frames_list = [{'positions':[{'dof':dof[0],'pos':dof[1]} for dof in f.positions.iteritems()],'millis':f.millis} for f in self.frames]
+        # frames_list = [{'positions':[{'dof':dof[0],'pos':dof[1]} for dof in f.positions.items()],'millis':f.millis} for f in self.frames]
+        frames_list = [{'positions':[{'dof':dof[0],'pos':dof[1]} for dof in f.positions.items()],'millis':f.millis} for f in self.frames]
 
         # save to file
         with open(robot_dir + seq_name + '_sequence.json', 'w') as seq_file:
             json.dump({'animation': seq_name, 'frame_list': frames_list}, seq_file, indent=2)
+
+        # return the name of the saved sequenced (minus _sequence.json)
+        return seq_file
 
 class Frame:
     """
@@ -190,7 +195,7 @@ class Frame:
         Convert from radians to angle
         """
         # iterate through all positions
-        for k, p in self.positions.iteritems():
+        for k, p in list(self.positions.items()):
             self.positions[k] = (p - 3) * 50
 
 
@@ -255,8 +260,6 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
         f_0 = frames[0]
         f_0_pos = f_0.positions
 
-        # print playback params
-        print(self.speed, self.amp, self.post)
 
         # iterate through all frames
         for f in frames:
@@ -282,9 +285,9 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
             # remove dofs that are not on robot
             # TODO make this cleaner
             # dofs that are in the robot config
-            motor_dof = self.Robot.motors.keys()
+            motor_dof = list(self.Robot.motors.keys())
             # dofs that are in the commanded position
-            frame_dof = f.positions.keys()
+            frame_dof = list(f.positions.keys())
 
             # remove dofs from commanded position that are in robot config
             for m_dof in motor_dof:
@@ -297,7 +300,6 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
             [f_copy.positions.pop(k, None) for k in frame_dof]
 
             # move robot
-            # print t_delay, f_copy.positions
 
             # get the robot's current position
             self.motor_pos = self.Robot.get_motor_pos()
@@ -328,7 +330,6 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
                 next_pos_dof = np.maximum(self.Robot.range_pos[dof_key][0],np.minimum(self.Robot.range_pos[dof_key][1],next_pos_dof))
 
                 # update dictionary
-                # next_pos[dof_key] = next_pos_dof
                 # add distance to dictionary
                 d_pos.update({dof_key:(next_pos_dof-f_0_pos[dof_key])})
                 goal_pos.update({dof_key:next_pos_dof})
@@ -340,31 +341,8 @@ class SequencePrimitive(pypot.primitive.LoopPrimitive):
                 # vel_pos.append(vel)
                 vel_pos.update({dof_key:vel})
 
-            # map distance to velocity
-            # vel = np.interp(del_pos,[0,100],[0,1])
-
-            # self.robot.goto_position(next_pos, duration=t_delay*(1.0/vel), wait=False)
-            # command each motor
-            # print(goal_pos.values())
-
-            # for m,p in goal_pos.iteritems():
-            #     # calculate the velocity by which to scale the time delay
-            #     vel = np.interp(np.abs(d_pos[m]),[0,100],[0.1,1])
-
-            #     # hotfix for base 4 rotation
-            #     if (m=='base'):
-            #         vel = np.interp(np.abs(d_pos[m]),[0,200],[0.5,1])
-            #     # command the motor
-            #     # the time delay is used to determine the velocity,
-            #     # but don't actually wait for it
-            #     self.robot.goto_position({m:p},duration=t_delay*(1.0/vel), wait=False)
-
-            # take average normalized velocity, move motors synchronously
-            # vel = np.average(vel_pos)
-            # self.robot.goto_position(goal_pos,duration=t_delay*(1.0/vel),wait=False)
-
             # move motors with respective velocities
-            for m,p in goal_pos.iteritems():
+            for m,p in list(goal_pos.items()):
                 self.robot.goto_position({m:p},duration=t_delay*(1.0/vel_pos[m]),wait=False)
 
             time.sleep(t_delay)
@@ -426,7 +404,7 @@ class RecorderPrimitive(pypot.primitive.Primitive):
             # add frame to json-savable list
             self.frames_list.append({
               'millis': float(millis),
-              'positions': [{'dof': k, 'pos': v / 50.0 + 3} for k, v in motor_pos.iteritems()]
+              'positions': [{'dof': k, 'pos': v / 50.0 + 3} for k, v in motor_pos.items()]
             })
             time.sleep(0.1)
 
@@ -457,7 +435,6 @@ class RecorderPrimitive(pypot.primitive.Primitive):
             if ('/' in seq_name):
                 robot_dir += seq_name[:seq_name.rfind('/')]
                 seq_name = seq_name[seq_name.rfind('/'):]
-            # robot_dir += seq_name[:seq_name.find('/')] if '/' in seq_name
             if not os.path.exists(robot_dir):
                 os.makedirs(robot_dir)
 

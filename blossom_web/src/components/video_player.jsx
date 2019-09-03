@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import YouTube from "react-youtube";
 
 /**
- * A player that triggers blossom gestures at specific times according the the sequences for a video.
+ * A player that triggers blossom gestures at specific times according the the sequences 
+ * for a video.
  */
 export class VideoPlayer extends React.PureComponent {
   constructor(props) {
@@ -85,7 +86,8 @@ export class VideoPlayer extends React.PureComponent {
   }
 
   /**
-   * Check if an emotion has been triggered for the given time. If so, update the next and prev emotions.
+   * Check if an emotion has been triggered for the given time. 
+   * If so, update the next and prev emotions.
    */
   checkEmotion(time) {
     if (this.triggers[this.nextEmotion] === undefined) {

@@ -22,6 +22,7 @@ alp = np.arctan2(r,h_rest)
 # radius of wheel
 # undersize to exaggerate more, oversize to reduce sensitivity
 r_w = 9.0
+r_w = 5.0
 # position of front attachment point wrt intertial frame
 p1_0 = np.array([r,0,0])
 # define rotation matrices to other attachment points

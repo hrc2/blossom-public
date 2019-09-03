@@ -34,7 +34,7 @@ for sn in long_seq.keys():
             millis = f.millis-start_millis
             frames_list.append({
               'millis': float(millis),
-              'positions': [{'dof': k, 'pos': v / 50.0 + 3} for k, v in f.positions.iteritems()]
+              'positions': [{'dof': k, 'pos': v / 50.0 + 3} for k, v in f.positions.items()]
             })
         print(j)
 

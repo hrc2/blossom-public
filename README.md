@@ -18,20 +18,38 @@ _Download through a package will be added in the future._
 
 ## Setup Software Dependencies
 
-Make sure you're using [Python `2.7`](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html).
+Make sure you're using [Python `3`]
+To check, run `python3 -V`or `python -V` in the terminal to check the version. As of now, the code works on `Python 3.5.2`.
 
-To check, run `python2.7` in the terminal and make sure it says "Python 2.7...." on the first line. 
+Also ensure that [`pip3` is installed](https://pip.pypa.io/en/stable/installing/).
+To install:
+Linux: `sudo apt install python3-pip`
+Mac: `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`, then `python3 get-pip.py`
 
-Also ensure that [`pip` is installed](https://pip.pypa.io/en/stable/installing/).
+Virtual environments (`venv`) should be installed, but if not:
+Linux: `sudo apt-get install python3-venv`
+Mac: `brew install python3-venv`
 
-Make a `venv` (virtual environment) in the top `blossom` directory:
+Make a `venv` (virtual environment) in the top `blossom` directory and activate it:
 ```
-virtualenv -p `which python2.7` venv
-source venv/bin/activate
+python3 -m venv blossom_venv
+source blossom_venv/bin/activate
 ```
 
 ### General Setup
-To install dependencies, run
+
+
+_Ubuntu_: You may need to run 
+
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`  
+``` 
+and
+```
+pip install wheel
+```
+
+To install dependencies, run in the main `blossom` directory:
 ```
 pip install -r requirements.txt
 ```
@@ -59,10 +77,6 @@ _Installation will take longer on a Raspberry Pi, and you may need additional de
 sudo apt-get install xvfb
 ```
 
-### Setup for Web / Mobile UI
-To be able to run the web UI or start the mobile app, install [yarn](https://yarnpkg.com/lang/en/docs/install/).
-
-Then `cd` into the `blossom_web` directory and run `yarn install`.
 
 ## Building Blossom
 
@@ -75,12 +89,11 @@ _Note that you need to have the basic software set up to correctly build Blossom
 ### CLI
 To start the CLI, plug Blossom in and run
 ```
-python start.py -n [robot_name]
+python start.py 
 ```
-For example, to start Woody:
-```
-python start.py -n woody
-```
+_Error: could not open port. You may need to run `sudo chmod 777 <the name of the port>.` 
+Ex: `sudo chmod 777 /dev/ttyACM0`
+
 
 Additional flags:
 ```
@@ -103,6 +116,43 @@ Available commands:
 ### GUI
 The GUI _should_ be accessible via `localhost:8000` after starting up the CLI if `-b` was **not** specified. Otherwise, the CLI should print a message stating the server url.
 
+### Built reactions to videos
+
+Open a new terminal and the video editor by typing: `xdg-open blossom_blockly/index.html` , then hit “Enter.” The video editor should open.
+
+In the video editor, type in the video URL with the video that your group chose and click “Update Video”.  
+_-Make sure that the video works (some videos have restrictions and cannot play)._
+
+In the terminal, startup the robot by typing: `python start.py -b`, then hit “Enter.”
+
+The startup prompt will say 
+	
+	+-------------------+
+	|     IP ADDRESS    |
+	+-------------------+
+	| 10.132.3.171:8000 |
+	+-------------------+
+
+This means that the IP address is 10.132.3.171. **Your IP address might not be 10.132.3.171**
+
+
+Type in the IP address from the previous step into the editor and press “Update IP Address”.
+
+**Choreograph**  
+In the left side of the video editor screen, use a Gesture block and input the starting time and gesture name.  
+
+Blocks must be connected to the initial block together for them to trigger gestures.   
+You can create new gestures with the __mobile app__ and use them in the editor video by hitting "Reload Gestures"  
+
+Check “Loop” to repeat the movement indefinitely until the next triggered gesture. 
+
+Adjust the playback speed, exaggeration (amplitude) and posture (lean forwards/backwards):  
+
+ 	-Choose and Adjustment block and add it to the gesture blocks in the "Adjustments" part  
+	-Enter the multiplier in the “multiply by” block.  
+	-Connect the multiplier block to the Adjustment block  
+	-Only one adjustment can be used at a time.  
+
 ### Mobile app (Currently only supported for Android)
 
 **Installation**
@@ -113,7 +163,7 @@ The app can be installed on [Android](https://play.google.com/store/apps/details
 
 In the app, tap the `Settings` icon in the top right.
 
-Enter the IP address of the host computer; this is listed under "Starting server on *IP_address*:8000" when first starting `start.py` or can be found other ways.
+Enter the IP address of the host computer; this is listed under "IP ADDRESS: *IP_address*:8000" when first starting `start.py` or can be found other ways.
 
 Once the IP address is entered, go back to the controller and toggle on `Control Robot`.
 

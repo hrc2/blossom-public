@@ -73,100 +73,6 @@ class RobotConfig(object):
                     },
                 }
             },
-            'blossom': {
-                'controllers': {
-                    'mx_controller': {
-                        'sync_read': False,
-                        'attached_motors': ['tower', 'bases'],
-                        'port': 'auto',
-                        'baudrate': 1000000,
-                        'protocol': 1
-                    }
-                },
-                'motorgroups': {
-                    'tower': ['tower_1', 'tower_2', 'tower_3'],
-                    'bases': ['base']
-                },
-                'motors': {
-                    'tower_1': {
-                        'orientation': 'direct',
-                        'type': 'MX-28',
-                        'id': 1,
-                        'angle_limit': [-150.0, 150.0],
-                        'offset': 0.0
-                    },
-                    'tower_2': {
-                        'orientation': 'direct',
-                        'type': 'MX-28',
-                        'id': 2,
-                        'angle_limit': [-150.0, 150.0],
-                        'offset': 0.0
-                    },
-                    'tower_3': {
-                        'orientation': 'direct',
-                        'type': 'MX-28',
-                        'id': 3,
-                        'angle_limit': [-150.0, 150.0],
-                        'offset': 0.0
-                    },
-                    'base': {
-                        'orientation': 'direct',
-                        'type': 'MX-28',
-                        'id': 4,
-                        'angle_limit': [-150.0, 150.0],
-                        'offset': 0.0
-                    }
-
-                }
-            },
-            'blossom_ears': {
-                'controllers': {
-                    'xl_controller': {
-                        'sync_read': False,
-                        'attached_motors': ['ears'],
-                        'port': self.ports[-1],
-                        'baudrate': 1000000,
-                        'protocol': 2
-                    }
-                },
-                'motorgroups': {
-                    'head': ['ears']
-                },
-                'motors': {
-                    'ears': {
-                        'orientation': 'direct',
-                        'type': 'XL-320',
-                        'id': 6,
-                        'angle_limit': [-150.0, 150.0],
-                        'offset': 0.0
-                    }
-                }
-            },
-            'vyo': {
-                'controllers': {
-                    'my_dxl_controller': {
-                        'sync_read': False,
-                        # 'attached_motors': ['bases', 'head'],
-                        'attached_motors': ['head'],
-                        'port': 'auto',
-                        'baudrate': 57600,
-                        'protocol': 1
-                    }
-                },
-                'motorgroups': {
-                    # 'bases': ['base'],
-                    'head': ['hip']
-                },
-                'motors': {
-                    'hip': {
-                        'orientation': 'direct',
-                        'type': 'MX-28',
-                        'id': 1,
-                        'angle_limit': [-10, 10],
-                        'offset': 0.0
-                    }
-                }
-            },
             'test': {
                 'controllers': {
                 },
@@ -244,10 +150,9 @@ class RobotConfig(object):
 
                 # iterate through all configs
                 if configs[i] not in used_configs and valid_port:
-                    controller = config['controllers'].keys()[0]
+                    controller = list(config['controllers'].keys())[0]
                     config['controllers'][controller]['port'] = port
-                    used_configs.append(configs[i])
-                    print("Assigning %s to port %s" % (name, port))
+                    used_configs.append(configs[i]) 
                     break
             else:
                 print("No robot found for port", port)

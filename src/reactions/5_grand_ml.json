@@ -2,52 +2,52 @@
     "triggers": [
         {
             "emotion": "happy",
-            "gesture": "reset/random",
+            "gesture": "reset",
             "time": 1.0
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 375.375
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 20562.208333333332
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 34951.58333333333
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 44627.916666666664
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 51092.70833333333
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 55722.33333333333
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 63146.416666666664
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 70320.25
         },
         {
             "emotion": "happy",
-            "gesture": "happy/random",
+            "gesture": "happy",
             "time": 77619.20833333333
         }
     ],

@@ -1,5 +1,5 @@
 import pypot.robot
-import sequence
+from . import sequence
 import collections
 
 # define the robot
@@ -80,7 +80,7 @@ class Robot(object):
         """
         motor_pos = {}
         # go through all motors
-        for name, m in self.motors.iteritems():
+        for name, m in list(self.motors.items()):
             motor_pos.update({name: m.present_position})
         return motor_pos
 
@@ -103,11 +103,11 @@ class Robot(object):
         args:
             compliant   whether motor is deactivated (true) or activated (false)
         """
-        for key, m in self.motors.iteritems():
+        for key, m in list(self.motors.items()):
             m.compliant = compliant
         self.compliant = compliant
 
-    def load_sequence(self, seq_fn, rad=True):
+    def load_sequence(self, seq_fn, rad=True, force=True):
         """
         Load sequence from json file
         args:
@@ -117,7 +117,9 @@ class Robot(object):
         seq = sequence.Sequence.from_json(seq_fn, rad)
 
         # don't add if sequence name already exists
-        if (not seq.seq_name in self.seq_list.keys()):
+        if (seq.seq_name in self.seq_list.keys() and not force):
+            return
+        else:
             self.add_sequence(seq)
 
     def add_sequence(self, seq):
@@ -129,9 +131,9 @@ class Robot(object):
         # add sequence
         seq_name = seq.seq_name
         name_ctr = 1
-        while (seq_name in self.seq_list):
-            seq_name = seq.seq_name+'_'+str(name_ctr)
-            name_ctr+=1
+        # while (seq_name in self.seq_list):
+        #     seq_name = seq.seq_name+'_'+str(name_ctr)
+        #     name_ctr+=1
         self.seq_list.update({seq_name: seq})
         # ensure that the list stays in sorted alphabetical order
         self.seq_list = collections.OrderedDict([(s,self.seq_list[s]) for s in sorted(self.seq_list.keys())])

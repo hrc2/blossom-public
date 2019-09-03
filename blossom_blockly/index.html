@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="./js.cookie.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style>
+    #parent {
+      display: flex;
+    }
+    #emotion {
+      font-size: 32pt;
+    }
+    #player {
+      /*margin: 0 auto;*/
+      height: 60vh;
+      width: 60vw;
+    }
+    #timecode {
+      position:fixed;
+      top: 10pt;
+      left: 10pt;
+      text-align: center;
+
+      width: 40pt;
+      padding: 5pt;
+      background-color: black;
+      color: white;
+    }
+    #c2 {
+      background-image: url(foo.png);
+      background-repeat: no-repeat;
+    }
+
+  </style>
+  <!-- <script src="demo_utils.es6"></script> -->
+  <!-- <script src="test.js"></script> -->
+  <!-- <script src="dance_mapping.js"></script> -->
+  <!-- <script src="test.json"></script> -->
+  <!-- </script> -->
+
+  <script type="text/javascript" src="processor.js"></script>
+  <script src="acorn_interpreter.js"></script>
+  <script src="blockly_compressed.js"></script>
+  <script src="blocks_compressed.js"></script>
+  <script src="javascript_compressed.js"></script>
+  <script src="msg/js/en.js"></script>
+  <script src="wait_block.js"></script>
+  <script src="gesture_blocks.js"></script>
+  <!-- <script src="get_gestures.js"></script> -->
+
+  <xml id="toolbox" style="display: none">
+
+    <category name="Gestures">
+      <block type="gesture_trigger"></block>
+      <!-- <block type="array"></block> -->
+    </category>
+    <category name="Adjustments">
+      <block type="adj"></block>
+      <block type="adj_num"></block>
+      <!-- <block type="adj_param"></block> -->
+    </category>
+  </xml>
+
+  <xml id="startBlocks" style="display: none">
+    
+    <block type="gesture_trigger" id="gesture_0" x="20" y="80">
+      <field name="TIME">0</field>
+      <field name="GESTURE">reset</field>
+    </block>
+  </xml>
+</head>
+
+
+<body>
+
+  
+  
+  <div id="parent">
+
+    <div id="editor" class="child float-left-child" style="width:40vw">
+
+
+      <div id="blocklyDiv" style="height:99vh; width:40vw" class="child"></div>
+    </div>
+    <div id="video" class = "child float-right-child" style="width:60vw">
+      <div id="player" class="child float-right-child"></div>
+
+      <input type="text" id="ipAddr" value="192.168.1.1" style="width:15vw; float:left">
+
+        <button onclick="loadIP()" id="ipButton" style="float:left; width:15vw">Update IP Address</button>
+        <button onclick="reloadGestures()" id="reloadButton" style="float:left; width:15vw">Reload Gestures</button>
+        <button onclick="resetRobot()" id="resetButton" style="float:left; width:15vw">Reset Robot</button>
+
+        <p><br></p>
+
+        <div id="videoUrlInput" class="child float-right-child">
+        <!-- <p> Video URL: </p> -->
+        <input type="text" id="videoUrl" value="https://www.youtube.com/watch?v=okFoKJK_N3w" style="width:45vw; float: left">
+        </div>
+        <button onclick="updateVideo()" id="videoButton" style="width:15vw;">Update Video</button>
+     
+        <div id="emotion" class="text-center alert alert-info">*</div>
+    </div>
+    
+  </div>
+
+
+  <script>
+
+
+  var videoUrl = document.getElementById("videoUrl").value;
+  function updateVideo() {
+    videoUrl = document.getElementById("videoUrl").value;
+    // onYouTubeIframeAPIReady();
+    player.loadVideoById(videoUrl.substring(videoUrl.search('=')+1));
+    Cookies.set("video_url",videoUrl)
+  }
+  cookie_vid = Cookies.get("video_url");
+  if (typeof(cookie_vid) != 'undefined') {
+    document.getElementById("videoUrl").value = cookie_vid;
+  }
+
+  var ip_addr = "192.168.1.1";
+  function loadIP() {
+    ip_addr = document.getElementById("ipAddr").value;
+    reloadGestures();
+    Cookies.set("ip_addr",ip_addr);
+  }
+  cookie_ip = Cookies.get("ip_addr");
+  if (typeof(cookie_ip) != 'undefined') {
+    document.getElementById("ipAddr").value = cookie_ip;
+  }
+  loadIP();
+
+  function resetRobot() {
+    $.get("http://"+ip_addr+":8000/s/reset", function(data, status){
+      console.log("reset")
+    }); 
+  }
+
+  // var emotions = $.getJSON('./test.json',function(json){});
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+
+  var videoUrl = document.getElementById("videoUrl").value;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      // height: '720',
+      // width: '1280',
+      videoId: videoUrl.substring(videoUrl.search('=')+1),
+      playerVars: {
+        // rel: 0,
+        autoplay: 0
+      },
+      events: {
+        'onReady': onPlayerReady,
+      }
+    });
+    
+  }
+
+  
+
+  var timeupdater = null;
+  var clearEmotion = null;
+  var videotime = 0;
+  var nextEmotion = 0;
+  var endEmotion = 0;
+  var n = 0;
+  var triggerList = [];
+
+  var gestureList = [["reset","reset"]];
+  var temp_gestureList = [["reset","reset"]];
+
+  function reloadGestures() {
+    var rawGestureList = [];
+    temp_gestureList = [];
+    $.get("http://"+ip_addr+":8000/sequences", function(data, status, xhr){
+      rawGestureList = data;
+      
+      for (var i = 0; i < rawGestureList.length; i++){ 
+        g = rawGestureList[i][0];
+        temp_gestureList.push([g,g]);
+      }
+      gestureList = temp_gestureList;
+    }); 
+    console.log(gestureList);
+  }
+  reloadGestures();
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    // event.target.playVideo();
+
+    function updateTime() {
+      var oldTime = videotime;
+      if(player && player.getCurrentTime) {
+        videotime = player.getCurrentTime();
+      }
+      if(videotime !== oldTime) {
+        checkEmotion(Math.round(videotime * 1000));
+      }
+    }
+
+    timeupdater = setInterval(updateTime, 100);
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+
+  function pad(num, size) {
+      var s = num+"";
+      while (s.length < size) s = "0" + s;
+      return s;
+  }
+
+  var triggerList = [{'millis': 0, 'gesture':"reset"}]
+
+  function checkEmotion(time) {
+
+    latestCode = Blockly.JavaScript.workspaceToCode(demoWorkspace)
+
+    nextEmotion = 0;
+    while (time/1000.0>triggerList[nextEmotion].millis) {
+      nextEmotion++;
+      if (nextEmotion >=triggerList.length) {
+        break;
+      }
+    }
+    em = triggerList[nextEmotion];
+
+    if (typeof(em) != 'undefined'){
+      if (em.millis-time/1000.0>0.150) {
+        return;
+      }
+
+      // We hit the next emotion time
+      triggerEmotion(em);
+    }
+ 
+  }
+
+  
+  server_port = "8000";
+
+  function triggerEmotion(em) {
+    clearTimeout(clearEmotion);
+    emotion.innerHTML = em.emotion;
+
+    msg = "http://"+ip_addr+':'+server_port+"/s/" + em.gesture;
+    if (em.loop) {
+      msg = msg + "=" + em.gesture;
+    }
+    if (typeof(em.adj) != 'undefined') {
+      msg = msg + em.adj;
+    }
+
+
+    emotion.innerHTML = msg;
+    $.get(msg, function(data, status){});
+
+    if (!em.duration) {
+      em.duration = 1000;
+    }
+
+
+  }
+
+
+
+  var demoWorkspace = Blockly.inject('blocklyDiv',
+        {media: '../blockly/media/',
+         toolbox: document.getElementById('toolbox')});
+    Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
+                               demoWorkspace);
+  
+ 
+    
+    demoWorkspace.getBlockById('gesture_0').setDeletable(false);
+    demoWorkspace.getBlockById('gesture_0').setPreviousStatement(false);
+
+    // Exit is used to signal the end of a script.
+    Blockly.JavaScript.addReservedWords('exit');
+
+    // var outputArea = document.getElementById('output');
+    var runButton = document.getElementById('runButton');
+    var myInterpreter = null;
+    var runner;
+
+    function initApi(interpreter, scope) {
+      // Add an API function for the alert() block, generated for "text_print" blocks.
+      var wrapper = function(text) {
+        text = text ? text.toString() : '';
+        // outputArea.value = outputArea.value + '\n' + text;
+      };
+      interpreter.setProperty(scope, 'alert',
+          interpreter.createNativeFunction(wrapper));
+
+      // Add an API function for the prompt() block.
+      var wrapper = function(text) {
+        text = text ? text.toString() : '';
+        return interpreter.createPrimitive(prompt(text));
+      };
+      interpreter.setProperty(scope, 'prompt',
+          interpreter.createNativeFunction(wrapper));
+
+      // Add an API for the wait block.  See wait_block.js
+      initInterpreterWaitForSeconds(interpreter, scope);
+
+      // Add an API function for highlighting blocks.
+      var wrapper = function(id) {
+        id = id ? id.toString() : '';
+        return interpreter.createPrimitive(highlightBlock(id));
+      };
+      interpreter.setProperty(scope, 'highlightBlock',
+          interpreter.createNativeFunction(wrapper));
+    }
+
+    var highlightPause = false;
+    var latestCode = '';
+
+    function highlightBlock(id) {
+  
+    }
+
+    function resetStepUi(clearOutput) {
+      demoWorkspace.highlightBlock(null);
+      highlightPause = false;
+
+    }
+
+    var minTime = 0;
+    function generateCodeAndLoadIntoInterpreter() {
+      // Generate JavaScript code and parse it.
+      Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
+      Blockly.JavaScript.addReservedWords('highlightBlock');
+      latestCode = Blockly.JavaScript.workspaceToCode(demoWorkspace);
+      triggerList = [];
+      eval(latestCode);
+      console.log(latestCode);
+
+      var newId = videoUrl.substring(videoUrl.search('='+1));
+      c = demoWorkspace.getBlockById('gesture_0')
+      while (c.getChildren()[0] != null) {
+        c = c.getChildren()[0]
+      }
+
+      minTime = c.getFieldValue('TIME')
+      console.log(triggerList);
+      console.log(gestureList);
+ 
+
+      resetStepUi(true);
+    }
+
+    function resetInterpreter() {
+      myInterpreter = null;
+      if (runner) {
+        clearTimeout(runner);
+        runner = null;
+      }
+    }
+
+    function runCode() {
+      if (!myInterpreter) {
+        // First statement of this code.
+        // Clear the program output.
+        resetStepUi(true);
+        // runButton.disabled = 'disabled';
+
+        // And then show generated code in an alert.
+        // In a timeout to allow the outputArea.value to reset first.
+        setTimeout(function() {
+          
+
+          // Begin execution
+          highlightPause = false;
+          myInterpreter = new Interpreter(latestCode, initApi);
+          runner = function() {
+            if (myInterpreter) {
+              var hasMore = myInterpreter.run();
+              if (hasMore) {
+                // Execution is currently blocked by some async call.
+                // Try again later.
+                setTimeout(runner, 10);
+              } else {
+                // Program is complete.
+                // outputArea.value += '\n\n<< Program complete >>';
+                resetInterpreter();
+                resetStepUi(false);
+              }
+            }
+          };
+          runner();
+        }, 1);
+        return;
+      }
+    }
+
+    // Load the interpreter now, and upon future changes.
+    generateCodeAndLoadIntoInterpreter();
+    demoWorkspace.addChangeListener(function(event) {
+      if (!(event instanceof Blockly.Events.Ui)) {
+        // Something changed. Parser needs to be reloaded.
+        resetInterpreter();
+        generateCodeAndLoadIntoInterpreter();
+        runCode();
+
+      }
+    });
+  </script> 
+</body>
+
+
+
+<script>
+</script>
+
+</html>

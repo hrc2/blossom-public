@@ -4,13 +4,14 @@ A Flask webserver for handling requests to the robot
 from __future__ import print_function
 
 import os
-import kinematics as k
+from . import kinematics as k
 from flask import Flask, render_template, request, jsonify
 import json
 import numpy as np
 from collections import OrderedDict
 import socket
 import requests
+from flask_cors import CORS
 
 class Server(object):
     """
@@ -53,7 +54,8 @@ class Server(object):
         app.run(host=host, port=port, threaded=True)
 
 
-app = Flask(__name__)
+app = Flask(__name__) 
+CORS(app)
 server = Server()
 cur_yaw = 0
 
@@ -79,16 +81,21 @@ def add_cors_headers(response):
     return response
 
 
+@app.route('/r')
+def handle_reload():
+    """
+    reload list of sequences
+    """
+    server.handle_input(server.master_robot, 'r')
+    return "reloaded"
+
+
 @app.route('/s/<gesture>')
 def handle_sequence(gesture):
     """
     plays a sequence
     """
     speed, amp, post = request.args.get('speed'), request.args.get('amp'), request.args.get('post')
-    # print(speed, amp, post)
-    # server.speed = float(speed) if speed!=None else server.speed = 1.0 
-    # server.amp = float(amp) if amp!=None else server.amp = 1.0
-    # server.post = float(post) if post!=None else server.post = 1.0
 
     if speed==None: speed = 1
     if amp==None: amp = 1
@@ -159,6 +166,7 @@ def set_position():
 
     # handle mirroring mode (swap roll for towers 2 and 3, flip yaw)
     if (mirror):
+        # motor_pos['tower_1']= pos[0]
         motor_pos['tower_2'] = pos[2]
         motor_pos['tower_3'] = pos[1]
         motor_pos['base'] = -pos[3]
@@ -172,6 +180,7 @@ def set_position():
     # adjust the duration (numeric input to goto_position)
     # higher (0.3) = slow+smooth, low (0.1) = jittery+fast
     for bot in server.robots:
+        # print(motor_pos)
         bot.goto_position(motor_pos, 0.1, True)
         bot.believed_motor_pos = motor_pos
 
@@ -184,37 +193,19 @@ def get_imu_data(raw_data):
     return the current imu values of the robot
     """
     global cur_yaw
-    # print(raw_data)
-    # imu = [0] * len(raw_data)
-    # # find start/end of each number (delimit by : ,)
-    # i_start = [i for i, c in enumerate(raw_data) if c == ':']
-    # i_end = [i for i, c in enumerate(raw_data) if c == ',']
-    # # must add for last end
-    # i_end.append(-1)
 
     # convert to floats
-    # for i, (i_s, i_e) in enumerate(zip(i_start, i_end)):
-    #     imu[i] = float(raw_data[i_s + 1:i_e])
     imu = [raw_data['x'], raw_data['y'], raw_data['z'],
            raw_data['h'], raw_data['ears'],
            raw_data['ax'], raw_data['ay'], raw_data['az']]
-    # if (imu[2]<0):
-    #     imu[2] += 2*np.pi
-    # print(imu[2])
-    # if(cur_yaw-imu[2] > np.pi):
-    #     imu[2]+=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
-    # elif (imu[2]-cur_yaw > np.pi):
-    #     imu[2]-=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
-    # if (np.abs(cur_yaw-imu[2])>np.pi and cur_yaw*imu[2]<0):
-    #     print('loop')
-    #     imu[2]+=2*np.pi*np.ceil(cur_yaw/(2*np.pi))
+
     cur_yaw = imu[2]
     return imu
 
 
 @app.route('/sequences')
 def get_sequences():
-    # comment below is what code used to be before time was implemented n
+    
     seqs = server.master_robot.get_time_sequences()
 
     return jsonify(seqs)
@@ -246,12 +237,10 @@ def update_sequence(seq_id):
     # handle collisions with existing gesture names
     new_name = name
     name_ctr = 1
-    # print(os.listdir(seq_dir))
     while ((new_name + '_sequence.json') in os.listdir(seq_dir)):
         new_name = name + '_' + str(name_ctr)
         name_ctr += 1
     name = new_name
-    # print(name)
 
     # temporary file
     src_file = "%s_sequence.json" % seq_id
@@ -274,18 +263,12 @@ def update_sequence(seq_id):
     return "sequence not found", 404
 
 
-# TODO: move logic to start.py
 def update_seq_file(seq_path, name, label):
     """
     updates the content of a sequence file to the given args.
     """
     seq = json.load(open(seq_path))
-    # robot_dir = seq_fn.find('sequences')+len('sequences')+1
-    # seq_path = seq_path[seq_path[robot_dir:].find('/'):]
-    # # print(seq_fn[robot_dir:])
 
-    # # sequence name includes subdirectory
-    # seq_name = seq_path[robot_dir+1:seq_path.rfind('_')]
     seq["animation"] = name
     seq["label"] = label
     with open(seq_path, "w") as f:
@@ -294,30 +277,6 @@ def update_seq_file(seq_path, name, label):
     for robot in server.robots:
         robot.load_sequence(seq_path)
     server.store_gesture(name, seq["frame_list"], label)
-
-
-# MH: I have deprecated the Google Cloud service hosting the TF model for classifying gestures because it was costing a strangely large amount of money (like $10 per day). Also, it was set up on my personal account. I will put setup instructions in the README for future generations to attempt.
-@app.route('/classify_sequence/<seq_id>')
-def get_classification(seq_id):
-    # classification_endpoint = "https://classification-service-dot-blossom-gestures.appspot.com/classify"
-    # seq_path = "%s%s/tmp/%s_sequence.json" % (SEQUENCES_DIR, server.master_robot.name, seq_id)
-    # seq = json.load(open(seq_path, "r"))
-    # r = requests.post(classification_endpoint, json=seq)
-    # return r.text
-    return "service unavailable", 503
-
-
-# MH: I have deprecated the Google Cloud service hosting the TF model for classifying gestures because it was costing a strangely large amount of money (like $10 per day). Also, it was set up on my personal account. I will put setup instructions in the README for future generations to attempt.
-@app.route('/generate')
-def generate_gesture():
-    # emotion = request.args.get('emotion') or "happy"
-    # url = "https://classification-service-dot-blossom-gestures.appspot.com/gesture?emotion=%s" % emotion
-    # r = requests.get(url)
-    # json_data = json.loads(r.text)
-    # server.master_robot.play_seq_json(json_data)
-    # return "okay"
-    return "service unavailable", 503
-
 
 @app.route('/videos')
 def get_videos():

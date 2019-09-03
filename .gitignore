@@ -13,13 +13,10 @@ stop
 
 # keep default sequences
 !src/sequences/*/ignore
-!src/sequences/*/anger_sequence.json
-!src/sequences/*/fear_sequence.json
-!src/sequences/*/happy_sequence.json
-!src/sequences/*/sad_sequence.json
-!src/sequences/*/reset_sequence.json
-!src/sequences/*/yes_sequence.json
-!src/sequences/*/no_sequence.json
-!src/sequences/*/grand*
-!src/sequences/*/inside*
-!src/sequences/*/sesame*
+!src/sequences/*/anger*
+!src/sequences/*/fear*
+!src/sequences/*/happy*
+!src/sequences/*/sad*
+!src/sequences/*/reset*
+!src/sequences/*/yes*
+!src/sequences/*/no*
