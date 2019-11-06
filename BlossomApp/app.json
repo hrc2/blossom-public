@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Blossom App",
+    "name": "BlossomApp",
     "slug": "blossom-app",
-    "sdkVersion": "26.0.0",
+    "sdkVersion": "33.0.0",
     "orientation": "portrait",
     "androidStatusBarColor": "#ffffff",
     "androidStatusBar": {

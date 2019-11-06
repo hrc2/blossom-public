@@ -142,6 +142,5 @@ const styles = StyleSheet.create({
   button: {marginBottom: 10,},
   seqList: {
     height : 400,
-    flex: 1, // not working
   }
 });
