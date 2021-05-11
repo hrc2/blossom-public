@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "33.0.0",
+    "jest-expo": "34.0.0",
     "react-test-renderer": "16.8.3"
   },
   "main": "./node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "eject": "expo eject",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "test": "jest"
+    "android": "expo android",
+    "ios": "expo ios",
+    "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
     "preset": "jest-expo"
@@ -22,15 +22,15 @@
     "@unimodules/core": "^3.0.2",
     "@unimodules/react-native-adapter": "^3.0.0",
     "eslint": "3.14.1",
-    "expo": "^33.0.0",
-    "expo-cli": "^3.3.0",
+    "expo": "^34.0.1",
     "expo-font": "~5.0.1",
     "native-base": "^2.12.1",
     "npm": "^5.10.0",
     "process": "^0.11.10",
     "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
     "react-native-modal": "^5.3.0",
+    "react-native-scripts": "^2.0.1",
     "react-native-slider": "^0.11.0",
     "react-navigation": "^1.6.1",
     "react-redux": "^5.1.1",
@@ -55,8 +55,5 @@
     "_stream_duplex": "readable-stream/duplex",
     "_stream_passthrough": "readable-stream/passthrough",
     "stream": "stream-browserify"
-  },
-  "description": "React Native app for interfacing with Blossom robot. Currently using a wrapper called Expo for easier deployment on iOS and android. However, this limits us to only using the Expo API, so no native coding or open-source solutions unless we eject from Expo.",
-  "author": "",
-  "license": "ISC"
+  }
 }

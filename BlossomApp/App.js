@@ -7,6 +7,12 @@ import { GenerationScreen } from './screens/generation_screen';
 import { SettingsScreen } from './screens/settings_screen';
 import { NavButton } from "./components/nav_button";
 import { Text, Icon, Button } from "native-base";
+import { AppRegistry } from 'react-native';
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent('BlossomApp', () => App);
+
+
 
 export default StackNavigator({
   Home: {
@@ -42,7 +48,7 @@ export default StackNavigator({
         swipeEnabled: false,
       }),
     navigationOptions: ({navigation}) => ({
-      title: "Blossom App",
+      title: "BlossomApp",
       headerRight: <NavButton navigation={navigation} />,
     }),
   },

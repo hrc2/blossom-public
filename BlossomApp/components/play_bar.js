@@ -54,11 +54,9 @@ export class PlayBar extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
         padding: 10,
-        marginBottom: 10,
         backgroundColor: "#a9b8c9",
     },
     buttonText: {
