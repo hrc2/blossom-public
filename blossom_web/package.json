@@ -16,6 +16,7 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
+    "merge": "^2.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
