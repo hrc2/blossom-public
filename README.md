@@ -1,20 +1,50 @@
 # Blossom
 
-Blossom is an open-hardware, open-source tensile robot that you can handcraft and accessorize to your liking. You can read more about the project in [Evan Ackerman's IEEE Spectrum article](https://spectrum.ieee.org/automaton/robotics/home-robots/blossom-a-creative-handmade-approach-to-social-robotics-from-cornell-and-google).
+Blossom is an open-hardware, open-source tensile robot that you can handcraft and accessorize to your liking. You can read more about the project in the [ACM T-HRI Paper](https://doi.org/10.1145/3310356) and in [Evan Ackerman's IEEE Spectrum article](https://spectrum.ieee.org/automaton/robotics/home-robots/blossom-a-creative-handmade-approach-to-social-robotics-from-cornell-and-google).
 
 Here are two examples of Blossom robots:
 
-<img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-bunny-corner-e1502812175733-300x189.jpg" width="300">
-<img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" width="300" >
+<img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-bunny-corner-e1502812175733-300x189.jpg" height="200"> <img src="http://guyhoffman.com/wp-content/uploads/2017/08/blossom-jellyfish-768x606.jpg" height="200" >
 
 **For any questions (assembly or software related), [please check/make public issues](https://github.com/hrc2/blossom-public/issues).**
+
+## How to Cite
+
+If you use this repository or any of its content, please cite it as follows:
+
+Michael Suguitan and Guy Hoffman. 2019. Blossom: A Handcrafted Open-Source Robot. _J. Hum.-Robot Interact. 8_, 1, Article 2 (March 2019), 27 pages. https://doi.org/10.1145/3310356
+
+
+Bibtex:
+```
+@article{suguitan2019blossom,
+author = {Suguitan, Michael and Hoffman, Guy},
+title = {Blossom: A Handcrafted Open-Source Robot},
+year = {2019},
+issue_date = {March 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {1},
+doi = {10.1145/3310356},
+journal = {J. Hum.-Robot Interact.},
+month = {mar},
+articleno = {2},
+numpages = {27},
+keywords = {craft, social robotics, toolkit, handcrafted, robot toolkit, craft robotics, 
+            research platform, open-source, Robot design, soft robotics}
+}
+```
+
+----
+
+# Blossom How-To
 
 ## Get repo
 In a terminal, clone this repo
 ```
 git clone https://github.com/hrc2/blossom-public/
 ```
-_Download through a package will be added in the future._
 
 ## Setup Software Dependencies
 
@@ -83,7 +113,9 @@ sudo apt-get install xvfb
 
 To build your own Blossom, check out the [Build Guide](https://github.com/hrc2/blossom-public/wiki). The rest of this document will teach you how to set up the software to run the robot.
 
-_Note that you need to have the basic software set up to correctly build Blossom_
+> **Note**
+> You need to have the basic software set up as listed above to build Blossom_
+
 
 ## Running Blossom 
 
